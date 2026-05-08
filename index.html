@@ -5,13 +5,65 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#0c0a06">
 <title>Illuminati Barber Shop · Un día a la vez · Chitagá</title>
-<meta name="description" content="Barbería premium en Chitagá, Norte de Santander. Cortes, fade, diseño de cejas y más. WhatsApp: 314 226 1626.">
-<meta property="og:title" content="Illuminati Barber Shop">
-<meta property="og:description" content="Un día a la vez. Arte en cada corte, actitud en cada hoja.">
+<meta name="description" content="Barbería premium en Chitagá, Norte de Santander. Cortes clásicos, fade sombreado, diseño de cejas, pigmentación. WhatsApp: 314 226 1626.">
+<meta name="keywords" content="barbería Chitagá, corte de cabello Chitagá, fade Chitagá, diseño de cejas, barbería Norte de Santander">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Illuminati Barber Shop — Chitagá">
+<meta property="og:description" content="Un día a la vez. Arte en cada corte, actitud en cada hoja. Barbería premium en Chitagá, Norte de Santander.">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Illuminati Barber Shop — Chitagá">
+<meta name="twitter:description" content="Arte en cada corte. Actitud en cada hoja.">
+<!-- Favicon: triángulo Illuminati SVG -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 90'><path d='M50 5L95 85H5Z' fill='none' stroke='%23c8a050' stroke-width='5' stroke-linejoin='round'/><line x1='50' y1='5' x2='50' y2='85' stroke='%23c8a050' stroke-width='2' opacity='.4'/></svg>">
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230c0a06'/><path d='M50 10L90 80H10Z' fill='none' stroke='%23c8a050' stroke-width='5' stroke-linejoin='round'/></svg>">
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HairSalon",
+  "name":"Illuminati Barber Shop",
+  "alternateName":"Illuminati Barber",
+  "description":"Barbería premium en Chitagá, Norte de Santander. Cortes clásicos, fade sombreado, diseño de cejas profesional.",
+  "telephone":"+573142261626",
+  "url":"https://rivasandrey16-hub.github.io/illluminati-Barbershop/",
+  "image":"https://images.unsplash.com/photo-1503951458645-643d53bfd90f?q=85&w=1200",
+  "priceRange":"$",
+  "currenciesAccepted":"COP",
+  "paymentAccepted":"Cash",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Calle 3 #7-12",
+    "addressLocality":"Chitagá",
+    "addressRegion":"Norte de Santander",
+    "postalCode":"540001",
+    "addressCountry":"CO"
+  },
+  "geo":{
+    "@type":"GeoCoordinates",
+    "latitude":7.3333,
+    "longitude":-72.6167
+  },
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"19:00"}
+  ],
+  "hasOfferCatalog":{
+    "@type":"OfferCatalog",
+    "name":"Servicios de Barbería",
+    "itemListElement":[
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Corte Clásico"},"price":"12000","priceCurrency":"COP"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Fade Sombreado"},"price":"17000","priceCurrency":"COP"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Premium con Barba"},"price":"22000","priceCurrency":"COP"}
+    ]
+  },
+  "sameAs":["https://wa.me/573142261626"]
+}
+</script>
 <style>
 :root{
   --bg:#0c0a06;--s1:#111009;--s2:#1a160e;--s3:#231e14;--s4:#2d2619;
@@ -29,37 +81,38 @@ img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
 ul{list-style:none}
-body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E");background-size:160px}
+/* Film grain overlay */
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;opacity:.038;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E");background-size:160px}
 .wrap{width:min(1140px,92%);margin:0 auto}
-.section{padding:clamp(72px,10vw,130px) 0}
+/* Scroll reveal */
 .r{opacity:0;transform:translateY(32px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 .r.on{opacity:1;transform:none}
 .r.d1{transition-delay:.1s}.r.d2{transition-delay:.2s}.r.d3{transition-delay:.3s}.r.d4{transition-delay:.4s}
 @media(prefers-reduced-motion:reduce){.r{opacity:1;transform:none;transition:none}}
 
-/* LOADER */
-#loader{position:fixed;inset:0;z-index:9999;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;transition:opacity .6s var(--ease),visibility .6s}
+/* ===== LOADER ===== */
+#loader{position:fixed;inset:0;z-index:9999;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;transition:opacity .7s var(--ease),visibility .7s}
 #loader.out{opacity:0;visibility:hidden;pointer-events:none}
-.loader-tri svg{width:70px;height:auto}
-.loader-tri .tri-path{stroke-dasharray:300;stroke-dashoffset:300;animation:drawTri 1s .2s cubic-bezier(.4,0,.2,1) forwards}
+.loader-tri svg{width:72px;height:auto;filter:drop-shadow(0 0 12px rgba(200,160,80,.4))}
+.loader-tri .tri-path{stroke-dasharray:300;stroke-dashoffset:300;animation:drawTri 1.1s .2s cubic-bezier(.4,0,.2,1) forwards}
 @keyframes drawTri{to{stroke-dashoffset:0}}
-.loader-text{font-family:var(--fD);font-size:13px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);opacity:0;animation:fadeUp .5s .9s ease forwards}
-.loader-bar{width:120px;height:1px;background:var(--border);overflow:hidden}
-.loader-bar::after{content:'';display:block;height:100%;width:0;background:var(--gold);animation:barFill .8s .4s ease forwards}
+.loader-text{font-family:var(--fD);font-size:13px;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);opacity:0;animation:fadeUp .5s 1s ease forwards}
+.loader-bar{width:130px;height:1px;background:var(--border);overflow:hidden;border-radius:1px}
+.loader-bar::after{content:'';display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--gold-l));animation:barFill .9s .45s cubic-bezier(.4,0,.2,1) forwards}
 @keyframes barFill{to{width:100%}}@keyframes fadeUp{to{opacity:1}}
 
-/* NAV */
+/* ===== NAV ===== */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;border-bottom:1px solid transparent;transition:background .4s,border-color .4s,padding .4s}
-nav.scrolled{background:rgba(12,10,6,.93);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);border-bottom-color:var(--border)}
-.nav-in{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
-nav.scrolled .nav-in{padding:15px 0}
+nav.scrolled{background:rgba(12,10,6,.94);backdrop-filter:blur(22px) saturate(160%);-webkit-backdrop-filter:blur(22px) saturate(160%);border-bottom-color:var(--border)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:24px 0;transition:padding .4s}
+nav.scrolled .nav-in{padding:14px 0}
 .nav-brand{font-family:var(--fD);font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:10px}
-.brand-tri{width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:12px solid var(--gold);flex-shrink:0}
+.brand-tri{width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:12px solid var(--gold);flex-shrink:0;filter:drop-shadow(0 0 4px rgba(200,160,80,.5))}
 .nav-links{display:flex;align-items:center;gap:30px}
 .nav-links a{font-family:var(--fD);font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-d);transition:color var(--ease)}
 .nav-links a:hover{color:var(--gold)}
-.nav-wa{background:var(--gold);color:var(--bg)!important;padding:9px 20px;border-radius:3px;transition:background var(--ease),transform var(--ease)!important}
-.nav-wa:hover{background:var(--gold-l)!important;transform:translateY(-1px)}
+.nav-wa{background:var(--gold);color:var(--bg)!important;padding:9px 22px;border-radius:3px;transition:background var(--ease),transform var(--ease),box-shadow var(--ease)!important}
+.nav-wa:hover{background:var(--gold-l)!important;transform:translateY(-1px);box-shadow:0 4px 16px rgba(200,160,80,.3)}
 .nav-tog{display:none;flex-direction:column;gap:5px;padding:4px;width:32px}
 .nav-tog span{display:block;height:2px;background:var(--ink);border-radius:2px;transition:transform .3s,opacity .3s,width .3s}
 .nav-tog span:nth-child(3){width:70%}
@@ -67,156 +120,163 @@ nav.scrolled .nav-in{padding:15px 0}
 .nav-tog.open span:nth-child(2){opacity:0}
 .nav-tog.open span:last-child{transform:translateY(-7px) rotate(-45deg);width:100%}
 @media(max-width:800px){
-  .nav-links{display:none;position:fixed;inset:0;top:0;padding-top:80px;background:rgba(12,10,6,.97);backdrop-filter:blur(24px);flex-direction:column;align-items:center;justify-content:center;gap:28px}
+  .nav-links{display:none;position:fixed;inset:0;padding-top:80px;background:rgba(12,10,6,.97);backdrop-filter:blur(24px);flex-direction:column;align-items:center;justify-content:center;gap:32px}
   .nav-links.open{display:flex}
-  .nav-links a{font-size:18px;letter-spacing:.12em}
+  .nav-links a{font-size:20px;letter-spacing:.14em}
   .nav-tog{display:flex}
 }
 
-/* HERO */
+/* ===== HERO ===== */
 .hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1503951458645-643d53bfd90f?q=85&w=2400&fm=webp&auto=format&fit=crop') center/cover no-repeat;filter:sepia(15%) brightness(.28) contrast(1.3);will-change:transform}
-.hero-overlay{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 50%,transparent 30%,rgba(12,10,6,.6) 100%),linear-gradient(180deg,rgba(12,10,6,.2) 0%,transparent 40%,rgba(12,10,6,.95) 100%)}
-.hero::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;z-index:2;background:linear-gradient(180deg,transparent,var(--gold) 30%,var(--gold) 70%,transparent);opacity:.5}
-.hero-content{position:relative;z-index:2;padding:140px 0 100px;max-width:700px}
-.hero-eyebrow{display:flex;align-items:center;gap:14px;font-family:var(--fD);font-size:10px;font-weight:700;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);margin-bottom:32px}
-.hero-eyebrow::before{content:'';display:block;width:44px;height:1px;background:var(--gold)}
-.hero-h1{font-family:var(--fH);font-size:clamp(44px,9vw,108px);font-weight:900;line-height:.9;letter-spacing:-.02em;text-transform:uppercase;margin-bottom:8px}
-.hero-h1 .line2{display:block;font-style:italic;color:var(--gold);font-size:.72em;letter-spacing:.04em;line-height:1.1;margin-top:4px}
-.hero-h1 .slug{display:block;font-family:var(--fB);font-style:italic;font-weight:400;font-size:.28em;letter-spacing:.06em;color:var(--ink-d);margin-top:14px}
-.hero-divider{width:80px;height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin:28px 0}
-.hero-sub{font-size:clamp(15px,1.8vw,18px);color:var(--ink-d);font-style:italic;line-height:1.65;margin-bottom:44px;max-width:460px}
+.hero-bg{position:absolute;inset:-15%;background:url('https://images.unsplash.com/photo-1503951458645-643d53bfd90f?q=85&w=2400&fm=webp&auto=format&fit=crop') center/cover no-repeat;filter:sepia(18%) brightness(.26) contrast(1.35);will-change:transform;transform-origin:center center}
+.hero-overlay{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 50%,transparent 30%,rgba(12,10,6,.55) 100%),linear-gradient(180deg,rgba(12,10,6,.2) 0%,transparent 40%,rgba(12,10,6,.97) 100%)}
+.hero::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;z-index:2;background:linear-gradient(180deg,transparent,var(--gold) 25%,var(--gold) 75%,transparent);opacity:.55}
+.hero-content{position:relative;z-index:2;padding:140px 0 100px;max-width:720px}
+.hero-eyebrow{display:flex;align-items:center;gap:14px;font-family:var(--fD);font-size:10px;font-weight:700;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);margin-bottom:34px}
+.hero-eyebrow::before{content:'';display:block;width:44px;height:1px;background:var(--gold);opacity:.8}
+.hero-h1{font-family:var(--fH);font-size:clamp(46px,9vw,112px);font-weight:900;line-height:.88;letter-spacing:-.02em;text-transform:uppercase;margin-bottom:8px}
+.hero-h1 .line2{display:block;font-style:italic;color:var(--gold);font-size:.72em;letter-spacing:.04em;line-height:1.1;margin-top:6px;text-shadow:0 0 40px rgba(200,160,80,.25)}
+.hero-h1 .slug{display:block;font-family:var(--fB);font-style:italic;font-weight:400;font-size:.28em;letter-spacing:.07em;color:var(--ink-d);margin-top:16px}
+.hero-divider{width:88px;height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin:30px 0}
+.hero-sub{font-size:clamp(15px,1.8vw,18px);color:var(--ink-d);font-style:italic;line-height:1.7;margin-bottom:46px;max-width:480px}
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap}
-.hero-scroll{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--ink-dd);font-family:var(--fD);font-size:9px;letter-spacing:.3em;text-transform:uppercase}
-.scroll-line{width:1px;height:48px;background:linear-gradient(180deg,var(--gold),transparent);animation:scrollPulse 2s ease-in-out infinite}
-@keyframes scrollPulse{0%,100%{opacity:.25;transform:scaleY(.8)}55%{opacity:1;transform:scaleY(1)}}
+.hero-scroll{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:7px;color:var(--ink-dd);font-family:var(--fD);font-size:9px;letter-spacing:.3em;text-transform:uppercase}
+.scroll-line{width:1px;height:50px;background:linear-gradient(180deg,var(--gold),transparent);animation:scrollPulse 2.2s ease-in-out infinite}
+@keyframes scrollPulse{0%,100%{opacity:.2;transform:scaleY(.75)}55%{opacity:1;transform:scaleY(1)}}
 
-/* BUTTONS */
-.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--fD);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:14px 28px;border-radius:3px;transition:all .25s var(--ease);border:1px solid transparent}
+/* ===== BUTTONS ===== */
+.btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--fD);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:15px 30px;border-radius:3px;transition:all .25s var(--ease);border:1px solid transparent}
 .btn-gold{background:var(--gold);color:var(--bg);border-color:var(--gold)}
-.btn-gold:hover{background:var(--gold-l);border-color:var(--gold-l);transform:translateY(-2px);box-shadow:0 8px 24px rgba(200,160,80,.25)}
-.btn-outline{background:transparent;color:var(--ink);border-color:rgba(240,232,216,.25)}
+.btn-gold:hover{background:var(--gold-l);border-color:var(--gold-l);transform:translateY(-2px);box-shadow:0 8px 28px rgba(200,160,80,.3)}
+.btn-outline{background:transparent;color:var(--ink);border-color:rgba(240,232,216,.22)}
 .btn-outline:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
 
-/* MARQUEE */
-.marquee-wrap{background:var(--gold);padding:14px 0;overflow:hidden}
-.marquee-inner{display:flex;gap:52px;width:max-content;animation:mq 28s linear infinite}
+/* ===== MARQUEE ===== */
+.marquee-wrap{background:var(--gold);padding:15px 0;overflow:hidden}
+.marquee-inner{display:flex;gap:56px;width:max-content;animation:mq 30s linear infinite}
 .marquee-inner span{font-family:var(--fD);font-size:10px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--bg);white-space:nowrap}
-.marquee-inner .dot{opacity:.4;font-size:6px}
+.marquee-inner .dot{opacity:.38;font-size:6px}
 @keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.marquee-wrap:hover .marquee-inner{animation-play-state:paused}
 
-/* ABOUT */
+/* ===== ABOUT ===== */
 .about{padding:clamp(72px,10vw,130px) 0}
 .about-grid{display:grid;grid-template-columns:1fr;gap:48px}
-@media(min-width:768px){.about-grid{grid-template-columns:1fr 1fr;gap:72px;align-items:center}}
-.label{font-family:var(--fD);font-size:10px;font-weight:700;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
-.sec-title{font-family:var(--fH);font-size:clamp(28px,4vw,52px);font-weight:900;text-transform:uppercase;letter-spacing:.02em;line-height:1;margin-bottom:22px}
-.about-body{font-size:17px;color:var(--ink-d);font-style:italic;line-height:1.8}
+@media(min-width:768px){.about-grid{grid-template-columns:1fr 1fr;gap:80px;align-items:center}}
+.label{font-family:var(--fD);font-size:10px;font-weight:700;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.sec-title{font-family:var(--fH);font-size:clamp(28px,4vw,54px);font-weight:900;text-transform:uppercase;letter-spacing:.02em;line-height:1;margin-bottom:22px}
+.about-body{font-size:17px;color:var(--ink-d);font-style:italic;line-height:1.82}
 .about-stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:36px}
-.stat{background:var(--s2);border:1px solid var(--border);border-radius:6px;padding:18px 16px}
-.stat-n{font-family:var(--fD);font-size:28px;font-weight:900;color:var(--gold);line-height:1}
-.stat-l{font-size:12px;color:var(--ink-dd);letter-spacing:.05em;margin-top:5px}
+.stat{background:var(--s2);border:1px solid var(--border);border-radius:6px;padding:20px 16px;transition:border-color var(--ease)}
+.stat:hover{border-color:var(--gold-b)}
+.stat-n{font-family:var(--fD);font-size:30px;font-weight:900;color:var(--gold);line-height:1}
+.stat-l{font-size:12px;color:var(--ink-dd);letter-spacing:.05em;margin-top:6px}
 .about-img-wrap{position:relative;order:-1}
 @media(min-width:768px){.about-img-wrap{order:0}}
-.about-img-wrap::before{content:'';position:absolute;inset:-3px;border-radius:12px;background:linear-gradient(135deg,var(--gold),transparent 55%);z-index:0}
-.about-img-wrap img{position:relative;z-index:1;width:100%;aspect-ratio:3/4;object-fit:cover;filter:sepia(8%) grayscale(30%) contrast(1.1);border-radius:10px}
+.about-img-wrap::before{content:'';position:absolute;inset:-4px;border-radius:14px;background:linear-gradient(135deg,var(--gold) 0%,transparent 55%);z-index:0}
+.about-img-wrap::after{content:'';position:absolute;inset:-4px;border-radius:14px;background:linear-gradient(315deg,rgba(139,26,26,.5) 0%,transparent 45%);z-index:0}
+.about-img-wrap img{position:relative;z-index:1;width:100%;aspect-ratio:3/4;object-fit:cover;filter:sepia(10%) grayscale(28%) contrast(1.12);border-radius:11px}
 
-/* SECTION HEADER */
+/* ===== SECTION HEADER ===== */
 .sec-hd{text-align:center;margin-bottom:clamp(44px,6vw,72px)}
 .sec-hd .label{display:block}
-.gold-rule{width:72px;height:1px;margin:16px auto 0;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.gold-rule{width:72px;height:1px;margin:18px auto 0;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
 .hr-gold{display:flex;align-items:center;gap:18px;margin-bottom:36px}
-.hr-gold h3{font-family:var(--fD);font-size:clamp(16px,2vw,22px);font-weight:700;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;color:var(--gold-l)}
+.hr-gold h3{font-family:var(--fD);font-size:clamp(16px,2vw,22px);font-weight:700;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;color:var(--gold-l)}
 .hr-gold::after{content:'';flex:1;height:1px;background:var(--border)}
 
-/* SERVICES */
+/* ===== SERVICES ===== */
 .services{padding:clamp(72px,10vw,130px) 0;background:var(--s1);position:relative}
-.services::before,.services::after{content:'';position:absolute;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,160,80,.2),transparent)}
+.services::before,.services::after{content:'';position:absolute;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,160,80,.22),transparent)}
 .services::before{top:0}.services::after{bottom:0}
 .cuts-grid{display:grid;grid-template-columns:1fr;gap:22px;margin-bottom:72px}
 @media(min-width:600px){.cuts-grid{grid-template-columns:1fr 1fr}}
 @media(min-width:900px){.cuts-grid{grid-template-columns:repeat(3,1fr)}}
-.s-card{background:var(--s2);border:1px solid var(--border);border-radius:12px;overflow:hidden;position:relative;transition:transform var(--ease),border-color var(--ease),box-shadow var(--ease);contain:layout style}
-.s-card:hover{transform:translateY(-6px);border-color:var(--gold-b);box-shadow:0 20px 56px rgba(0,0,0,.5),0 0 0 1px rgba(200,160,80,.08)}
-.s-card-img{width:100%;height:220px;object-fit:cover;filter:sepia(10%) grayscale(40%) contrast(1.15) brightness(.9);transition:filter .45s,transform .5s}
-.s-card:hover .s-card-img{filter:sepia(5%) grayscale(0%) contrast(1.1);transform:scale(1.04)}
+/* 3D card tilt — JS adds inline transform on mousemove */
+.s-card{background:var(--s2);border:1px solid var(--border);border-radius:12px;overflow:hidden;position:relative;transition:border-color .3s,box-shadow .3s;contain:layout style;transform-style:preserve-3d;will-change:transform}
+.s-card:hover{border-color:var(--gold-b);box-shadow:0 24px 60px rgba(0,0,0,.55),0 0 0 1px rgba(200,160,80,.1),inset 0 1px 0 rgba(200,160,80,.08)}
+.s-card-img{width:100%;height:224px;object-fit:cover;filter:sepia(10%) grayscale(42%) contrast(1.15) brightness(.88);transition:filter .5s,transform .55s}
+.s-card:hover .s-card-img{filter:sepia(4%) grayscale(0%) contrast(1.1);transform:scale(1.06)}
 .s-card-body{padding:24px}
-.s-num{font-family:var(--fD);font-size:9px;letter-spacing:.35em;color:var(--gold);margin-bottom:10px}
+.s-num{font-family:var(--fD);font-size:9px;letter-spacing:.38em;color:var(--gold);margin-bottom:10px;opacity:.8}
 .s-name{font-family:var(--fH);font-size:20px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;line-height:1.1;margin-bottom:10px}
-.s-desc{font-size:14px;color:var(--ink-d);line-height:1.65;margin-bottom:18px}
-.s-price{font-family:var(--fD);font-size:22px;font-weight:700;color:var(--gold);margin-bottom:18px}
-.s-price small{font-size:11px;opacity:.6;font-weight:400}
+.s-desc{font-size:14px;color:var(--ink-d);line-height:1.68;margin-bottom:18px}
+.s-price{font-family:var(--fD);font-size:22px;font-weight:700;color:var(--gold);margin-bottom:18px;text-shadow:0 0 20px rgba(200,160,80,.2)}
+.s-price small{font-size:11px;opacity:.55;font-weight:400}
 .s-btn{display:block;text-align:center;padding:11px;border:1px solid var(--gold-b);border-radius:3px;font-family:var(--fD);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);transition:all .2s}
 .s-btn:hover{background:var(--gold);color:var(--bg)}
+/* Eyebrow cards */
 .brow-grid{display:grid;grid-template-columns:1fr;gap:18px}
 @media(min-width:600px){.brow-grid{grid-template-columns:1fr 1fr}}
 @media(min-width:900px){.brow-grid{grid-template-columns:repeat(3,1fr)}}
-.b-card{background:var(--s3);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:8px;padding:24px;position:relative;overflow:hidden;transition:transform var(--ease),box-shadow var(--ease);contain:layout style}
-.b-card::after{content:'';position:absolute;top:0;right:0;width:44px;height:44px;background:var(--gold-dim);clip-path:polygon(100% 0,0 0,100% 100%)}
-.b-card:hover{transform:translateY(-4px);box-shadow:0 14px 40px rgba(0,0,0,.4)}
-.b-icon{font-size:24px;margin-bottom:14px;line-height:1}
-.b-name{font-family:var(--fD);font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
-.b-desc{font-size:13px;color:var(--ink-d);line-height:1.6;margin-bottom:14px}
+.b-card{background:var(--s3);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:8px;padding:26px;position:relative;overflow:hidden;transition:transform var(--ease),box-shadow var(--ease),border-color var(--ease);contain:layout style}
+.b-card::after{content:'';position:absolute;top:0;right:0;width:48px;height:48px;background:var(--gold-dim);clip-path:polygon(100% 0,0 0,100% 100%)}
+.b-card:hover{transform:translateY(-4px);box-shadow:0 16px 44px rgba(0,0,0,.45);border-color:rgba(200,160,80,.35)}
+.b-icon{font-size:26px;margin-bottom:14px;line-height:1}
+.b-name{font-family:var(--fD);font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:9px}
+.b-desc{font-size:13px;color:var(--ink-d);line-height:1.62;margin-bottom:14px}
 .b-price{font-family:var(--fH);font-size:14px;font-style:italic;color:var(--ink-dd)}
-.new-badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--fD);font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;background:var(--gold);color:var(--bg);padding:6px 16px;border-radius:3px;margin-bottom:36px}
+.new-badge{display:inline-flex;align-items:center;gap:9px;font-family:var(--fD);font-size:10px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;background:var(--gold);color:var(--bg);padding:7px 18px;border-radius:3px;margin-bottom:38px}
 
-/* GALLERY */
+/* ===== GALLERY ===== */
 .gallery{padding:clamp(72px,10vw,130px) 0}
-.g-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 0 20px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent;cursor:grab;-webkit-overflow-scrolling:touch;margin-top:44px}
+.g-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 0 22px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent;cursor:grab;-webkit-overflow-scrolling:touch;margin-top:44px}
 .g-track:active{cursor:grabbing}
+.g-track.dragging{scroll-snap-type:none}
 .g-track::-webkit-scrollbar{height:3px}
 .g-track::-webkit-scrollbar-thumb{background:var(--gold);border-radius:99px}
 .g-item{flex:0 0 auto;scroll-snap-align:start;border-radius:10px;overflow:hidden;position:relative}
 .g-item:nth-child(3n+1){width:clamp(200px,25vw,340px)}
 .g-item:nth-child(3n+2){width:clamp(160px,18vw,240px)}
 .g-item:nth-child(3n){width:clamp(240px,28vw,380px)}
-.g-item img{width:100%;height:340px;object-fit:cover;filter:sepia(10%) grayscale(60%) contrast(1.2);transition:filter .4s,transform .5s;pointer-events:none}
-.g-item:hover img{filter:sepia(5%) grayscale(10%);transform:scale(1.05)}
-.g-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(12,10,6,.9) 100%);opacity:0;transition:opacity .3s;display:flex;align-items:flex-end;padding:16px}
+.g-item img{width:100%;height:340px;object-fit:cover;filter:sepia(12%) grayscale(60%) contrast(1.22);transition:filter .42s,transform .5s;pointer-events:none;display:block}
+.g-item:hover img{filter:sepia(4%) grayscale(8%);transform:scale(1.06)}
+.g-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(12,10,6,.92) 100%);opacity:0;transition:opacity .3s;display:flex;align-items:flex-end;padding:18px}
 .g-item:hover .g-overlay{opacity:1}
-.g-label{font-family:var(--fD);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.g-label{font-family:var(--fD);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
 
-/* LOCATION */
+/* ===== LOCATION ===== */
 .location{padding:clamp(72px,10vw,130px) 0;background:var(--s1);position:relative}
-.location::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,160,80,.2),transparent)}
+.location::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,160,80,.22),transparent)}
 .loc-grid{display:grid;grid-template-columns:1fr;gap:44px}
-@media(min-width:768px){.loc-grid{grid-template-columns:1fr 1fr;align-items:start;gap:56px}}
-.loc-map{border-radius:12px;overflow:hidden;border:1px solid var(--border)}
-.loc-map iframe{display:block;width:100%;height:320px;border:none;filter:sepia(20%) grayscale(90%) contrast(1.1) brightness(.75) invert(10%)}
-@media(min-width:768px){.loc-map iframe{height:380px}}
+@media(min-width:768px){.loc-grid{grid-template-columns:1fr 1fr;align-items:start;gap:60px}}
+.loc-map{border-radius:12px;overflow:hidden;border:1px solid var(--border);box-shadow:0 12px 40px rgba(0,0,0,.4)}
+.loc-map iframe{display:block;width:100%;height:330px;border:none;filter:sepia(22%) grayscale(90%) contrast(1.1) brightness(.72) invert(10%)}
+@media(min-width:768px){.loc-map iframe{height:400px}}
 .info-row{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--border)}
 .info-row:last-child{border-bottom:none}
-.info-ico{width:40px;height:40px;flex-shrink:0;background:var(--gold-dim);border:1px solid var(--gold-b);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:16px;margin-top:2px}
-.info-lbl{font-family:var(--fD);font-size:9px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
-.info-val{font-size:15px;color:var(--ink-d);line-height:1.6}
+.info-ico{width:42px;height:42px;flex-shrink:0;background:var(--gold-dim);border:1px solid var(--gold-b);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:17px;margin-top:2px}
+.info-lbl{font-family:var(--fD);font-size:9px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.info-val{font-size:15px;color:var(--ink-d);line-height:1.65}
 .info-val a:hover{color:var(--gold)}
 
-/* CTA */
-.cta-sec{padding:clamp(80px,12vw,160px) 0;text-align:center;position:relative;overflow:hidden}
+/* ===== CTA ===== */
+.cta-sec{padding:clamp(90px,12vw,170px) 0;text-align:center;position:relative;overflow:hidden}
 .cta-sec::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 70% at 50% 50%,rgba(200,160,80,.04) 0%,transparent 70%);pointer-events:none}
-.cta-tri{width:56px;height:56px;margin:0 auto 40px;position:relative}
-.cta-tri::before{content:'';position:absolute;inset:0;border-left:28px solid transparent;border-right:28px solid transparent;border-bottom:48px solid rgba(200,160,80,.18)}
-.cta-tri::after{content:'';position:absolute;top:16px;left:8px;border-left:20px solid transparent;border-right:20px solid transparent;border-bottom:34px solid var(--s1)}
-.cta-h2{font-family:var(--fH);font-size:clamp(30px,5.5vw,68px);font-weight:900;text-transform:uppercase;letter-spacing:.02em;line-height:1;margin-bottom:20px}
-.cta-sub{font-size:18px;font-style:italic;color:var(--ink-d);max-width:460px;margin:0 auto 48px;line-height:1.65}
+.cta-sec::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,160,80,.15),transparent)}
+.cta-tri{width:58px;height:58px;margin:0 auto 42px;position:relative;filter:drop-shadow(0 0 14px rgba(200,160,80,.18))}
+.cta-tri::before{content:'';position:absolute;inset:0;border-left:29px solid transparent;border-right:29px solid transparent;border-bottom:50px solid rgba(200,160,80,.2)}
+.cta-tri::after{content:'';position:absolute;top:17px;left:9px;border-left:20px solid transparent;border-right:20px solid transparent;border-bottom:33px solid var(--s1)}
+.cta-h2{font-family:var(--fH);font-size:clamp(32px,5.5vw,72px);font-weight:900;text-transform:uppercase;letter-spacing:.02em;line-height:1;margin-bottom:22px}
+.cta-sub{font-size:18px;font-style:italic;color:var(--ink-d);max-width:460px;margin:0 auto 50px;line-height:1.7}
 .cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 
-/* FOOTER */
-footer{background:var(--bg);border-top:1px solid var(--border);padding:44px 0 28px}
-.ft-in{display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center}
+/* ===== FOOTER ===== */
+footer{background:var(--bg);border-top:1px solid var(--border);padding:46px 0 30px}
+.ft-in{display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center}
 @media(min-width:640px){.ft-in{flex-direction:row;justify-content:space-between;text-align:left}}
 .ft-brand{font-family:var(--fD);font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
-.ft-brand small{display:block;font-family:var(--fB);font-size:13px;font-style:italic;font-weight:400;color:var(--ink-dd);letter-spacing:.06em;margin-top:4px}
-.ft-tri{width:0;height:0;border-left:16px solid transparent;border-right:16px solid transparent;border-bottom:28px solid rgba(200,160,80,.14);flex-shrink:0}
-.ft-copy{font-size:12px;color:var(--ink-dd);line-height:1.8}
+.ft-brand small{display:block;font-family:var(--fB);font-size:13px;font-style:italic;font-weight:400;color:var(--ink-dd);letter-spacing:.06em;margin-top:5px}
+.ft-tri{width:0;height:0;border-left:17px solid transparent;border-right:17px solid transparent;border-bottom:30px solid rgba(200,160,80,.14);flex-shrink:0}
+.ft-copy{font-size:12px;color:var(--ink-dd);line-height:1.9}
 
-/* FLOATING */
-.wa-float{position:fixed;bottom:24px;right:24px;z-index:200;display:flex;align-items:center;gap:9px;background:#25D366;color:#000;padding:12px 20px;border-radius:50px;font-family:var(--fD);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;box-shadow:0 6px 24px rgba(37,211,102,.3);transition:transform .2s,box-shadow .2s}
-.wa-float:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(37,211,102,.4)}
-.wa-float svg{width:16px;height:16px;flex-shrink:0}
-.snd-btn{position:fixed;bottom:24px;left:24px;z-index:200;width:46px;height:46px;border-radius:50%;background:var(--s3);border:1px solid var(--gold-b);display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 4px 20px rgba(0,0,0,.4);transition:transform .2s,background .2s}
-.snd-btn:hover{transform:scale(1.1);background:var(--s4)}
-.snd-btn.muted{opacity:.5}
+/* ===== FLOATING ===== */
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:200;display:flex;align-items:center;gap:9px;background:#25D366;color:#000;padding:12px 20px;border-radius:50px;font-family:var(--fD);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;box-shadow:0 6px 24px rgba(37,211,102,.32);transition:transform .2s,box-shadow .2s}
+.wa-float:hover{transform:translateY(-3px);box-shadow:0 12px 34px rgba(37,211,102,.45)}
+.wa-float svg{width:17px;height:17px;flex-shrink:0}
+.snd-btn{position:fixed;bottom:24px;left:24px;z-index:200;width:48px;height:48px;border-radius:50%;background:var(--s3);border:1px solid var(--gold-b);display:flex;align-items:center;justify-content:center;font-size:19px;box-shadow:0 4px 22px rgba(0,0,0,.45);transition:transform .2s,background .2s}
+.snd-btn:hover{transform:scale(1.12);background:var(--s4)}
+.snd-btn.active{border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,160,80,.15),0 4px 22px rgba(0,0,0,.45)}
 .snd-btn .on{display:block}.snd-btn .off{display:none}
 .snd-btn.muted .on{display:none}.snd-btn.muted .off{display:block}
 </style>
@@ -224,42 +284,42 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:44px 0 28
 <body>
 
 <!-- LOADER -->
-<div id="loader">
-  <div class="loader-tri"><svg viewBox="0 0 100 86" fill="none"><path class="tri-path" d="M50 4 L96 82 H4 Z" stroke="#c8a050" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/><line x1="50" y1="4" x2="50" y2="82" stroke="#c8a050" stroke-width="1" opacity=".35"/><line x1="4" y1="82" x2="96" y2="82" stroke="#c8a050" stroke-width="1" opacity=".35"/></svg></div>
+<div id="loader" role="status" aria-label="Cargando Illuminati Barber Shop">
+  <div class="loader-tri"><svg viewBox="0 0 100 86" fill="none" aria-hidden="true"><path class="tri-path" d="M50 4 L96 82 H4 Z" stroke="#c8a050" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/><line x1="50" y1="4" x2="50" y2="82" stroke="#c8a050" stroke-width="1" opacity=".35"/><line x1="4" y1="82" x2="96" y2="82" stroke="#c8a050" stroke-width="1" opacity=".35"/></svg></div>
   <p class="loader-text">Illuminati Barber Shop</p>
   <div class="loader-bar"></div>
 </div>
 
 <!-- NAV -->
-<nav id="nav">
+<nav id="nav" role="navigation" aria-label="Navegación principal">
   <div class="wrap nav-in">
-    <a href="#inicio" class="nav-brand"><span class="brand-tri"></span>Illuminati Barber</a>
-    <ul class="nav-links" id="navLinks">
+    <a href="#inicio" class="nav-brand" aria-label="Illuminati Barber Shop — inicio"><span class="brand-tri" aria-hidden="true"></span>Illuminati Barber</a>
+    <ul class="nav-links" id="navLinks" role="list">
       <li><a href="#nosotros">Nosotros</a></li>
       <li><a href="#servicios">Servicios</a></li>
       <li><a href="#galeria">Galería</a></li>
       <li><a href="#ubicacion">Ubicación</a></li>
-      <li><a href="https://wa.me/573142261626" target="_blank" rel="noopener" class="nav-wa">WhatsApp</a></li>
+      <li><a href="https://wa.me/573142261626" target="_blank" rel="noopener noreferrer" class="nav-wa">WhatsApp</a></li>
     </ul>
-    <button class="nav-tog" id="navTog" aria-label="Menú"><span></span><span></span><span></span></button>
+    <button class="nav-tog" id="navTog" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
 <!-- HERO -->
-<section id="inicio" class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-overlay"></div>
+<section id="inicio" class="hero" aria-label="Bienvenida">
+  <div class="hero-bg" id="heroBg" aria-hidden="true"></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
   <div class="wrap hero-content">
     <p class="hero-eyebrow r">Est. Chitagá · Norte de Santander</p>
     <h1 class="hero-h1 r d1">Illuminati<br>Barber<span class="line2">Shop</span><span class="slug">"Un día a la vez"</span></h1>
-    <div class="hero-divider r d2"></div>
+    <div class="hero-divider r d2" aria-hidden="true"></div>
     <p class="hero-sub r d2">Arte en cada corte. Actitud en cada hoja.<br>Desde Chitagá para el mundo.</p>
     <div class="hero-btns r d3">
       <a href="#servicios" class="btn btn-gold">Ver Servicios</a>
-      <a href="https://wa.me/573142261626" target="_blank" rel="noopener" class="btn btn-outline">Reservar Cita</a>
+      <a href="https://wa.me/573142261626" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Reservar Cita</a>
     </div>
   </div>
-  <div class="hero-scroll"><div class="scroll-line"></div>Scroll</div>
+  <div class="hero-scroll" aria-hidden="true"><div class="scroll-line"></div>Scroll</div>
 </section>
 
 <!-- MARQUEE -->
@@ -271,7 +331,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:44px 0 28
 </div>
 
 <!-- ABOUT -->
-<section id="nosotros" class="about">
+<section id="nosotros" class="about" aria-label="Sobre nosotros">
   <div class="wrap about-grid">
     <div>
       <p class="label r">Nuestra historia</p>
@@ -285,110 +345,144 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:44px 0 28
       </div>
     </div>
     <div class="about-img-wrap r">
-      <img loading="lazy" alt="Barbería Illuminati" src="https://images.unsplash.com/photo-1599351430140-8ce95e3d7f8a?q=80&w=1200&fm=webp&auto=format&fit=crop">
+      <img loading="lazy" alt="Interior de Illuminati Barber Shop en Chitagá" src="https://images.unsplash.com/photo-1599351430140-8ce95e3d7f8a?q=80&w=1200&fm=webp&auto=format&fit=crop">
     </div>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section id="servicios" class="services">
+<section id="servicios" class="services" aria-label="Nuestros servicios">
   <div class="wrap">
     <div class="sec-hd">
       <span class="label r">Nuestros servicios</span>
       <h2 class="sec-title r d1">Servicios</h2>
-      <div class="gold-rule r d2"></div>
+      <div class="gold-rule r d2" aria-hidden="true"></div>
     </div>
     <div class="cuts-grid">
-      <div class="s-card r">
-        <img class="s-card-img" loading="lazy" alt="Corte Clásico" src="https://images.unsplash.com/photo-1622286342621-4bd786c2447a?q=80&w=900&fm=webp&auto=format&fit=crop">
+      <article class="s-card r">
+        <img class="s-card-img" loading="lazy" alt="Corte Clásico en Illuminati Barber Shop" src="https://images.unsplash.com/photo-1622286342621-4bd786c2447a?q=80&w=900&fm=webp&auto=format&fit=crop">
         <div class="s-card-body">
-          <p class="s-num">— 01</p><h3 class="s-name">Corte Clásico</h3>
+          <p class="s-num">— 01</p>
+          <h3 class="s-name">Corte Clásico</h3>
           <p class="s-desc">Limpio, rápido y sin concesiones. El estilo atemporal ejecutado con precisión de hojilla.</p>
           <p class="s-price">$12.000 <small>COP</small></p>
-          <a class="s-btn" href="https://wa.me/573142261626?text=Hola%2C%20quiero%20reservar%20un%20Corte%20Cl%C3%A1sico" target="_blank" rel="noopener">Reservar</a>
+          <a class="s-btn" href="https://wa.me/573142261626?text=Hola%2C%20quiero%20reservar%20un%20Corte%20Cl%C3%A1sico" target="_blank" rel="noopener noreferrer">Reservar</a>
         </div>
-      </div>
-      <div class="s-card r d1">
-        <img class="s-card-img" loading="lazy" alt="Fade Sombreado" src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=900&fm=webp&auto=format&fit=crop">
+      </article>
+      <article class="s-card r d1">
+        <img class="s-card-img" loading="lazy" alt="Fade Sombreado en Illuminati Barber Shop" src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=900&fm=webp&auto=format&fit=crop">
         <div class="s-card-body">
-          <p class="s-num">— 02</p><h3 class="s-name">Fade Sombreado</h3>
+          <p class="s-num">— 02</p>
+          <h3 class="s-name">Fade Sombreado</h3>
           <p class="s-desc">Degradado impecable con acabado de hojilla. Incluye depilación de cejas opcional.</p>
           <p class="s-price">$17.000 <small>COP</small></p>
-          <a class="s-btn" href="https://wa.me/573142261626?text=Hola%2C%20quiero%20reservar%20un%20Fade%20Sombreado" target="_blank" rel="noopener">Reservar</a>
+          <a class="s-btn" href="https://wa.me/573142261626?text=Hola%2C%20quiero%20reservar%20un%20Fade%20Sombreado" target="_blank" rel="noopener noreferrer">Reservar</a>
         </div>
-      </div>
-      <div class="s-card r d2">
-        <img class="s-card-img" loading="lazy" alt="Premium con Barba" src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?q=80&w=900&fm=webp&auto=format&fit=crop">
+      </article>
+      <article class="s-card r d2">
+        <img class="s-card-img" loading="lazy" alt="Servicio Premium con Barba en Illuminati Barber Shop" src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?q=80&w=900&fm=webp&auto=format&fit=crop">
         <div class="s-card-body">
-          <p class="s-num">— 03</p><h3 class="s-name">Premium + Barba</h3>
+          <p class="s-num">— 03</p>
+          <h3 class="s-name">Premium + Barba</h3>
           <p class="s-desc">Corte completo + perfilado de barba + diseño de cejas. La experiencia definitiva.</p>
           <p class="s-price">$22.000 – $25.000 <small>COP</small></p>
-          <a class="s-btn" href="https://wa.me/573142261626?text=Hola%2C%20quiero%20reservar%20el%20servicio%20Premium%20con%20Barba" target="_blank" rel="noopener">Reservar</a>
+          <a class="s-btn" href="https://wa.me/573142261626?text=Hola%2C%20quiero%20reservar%20el%20servicio%20Premium%20con%20Barba" target="_blank" rel="noopener noreferrer">Reservar</a>
         </div>
-      </div>
+      </article>
     </div>
     <div class="hr-gold r"><h3>Servicios de Cejas</h3></div>
-    <div class="new-badge r d1">✦ Nuevo servicio profesional</div>
+    <div class="new-badge r d1" aria-label="Nuevo servicio">✦ Nuevo servicio profesional</div>
     <div class="brow-grid">
-      <div class="b-card r"><div class="b-icon">🌿</div><h3 class="b-name">Depilación con Cera</h3><p class="b-desc">Retiro de vello con cera profesional. Resultado limpio, preciso y de mayor duración.</p><p class="b-price">Consultar precio</p></div>
-      <div class="b-card r d1"><div class="b-icon">◈</div><h3 class="b-name">Pigmentación</h3><p class="b-desc">Relleno y definición con pigmento semipermanente. Cejas densas, efecto natural.</p><p class="b-price">Consultar precio</p></div>
-      <div class="b-card r d2"><div class="b-icon">✦</div><h3 class="b-name">Diseño de Cejas</h3><p class="b-desc">Diseño personalizado según tu estructura facial. Geometría perfecta, marco ideal.</p><p class="b-price">Consultar precio</p></div>
+      <article class="b-card r">
+        <div class="b-icon" aria-hidden="true">🌿</div>
+        <h3 class="b-name">Depilación con Cera</h3>
+        <p class="b-desc">Retiro de vello con cera profesional. Resultado limpio, preciso y de mayor duración.</p>
+        <p class="b-price">Consultar precio</p>
+      </article>
+      <article class="b-card r d1">
+        <div class="b-icon" aria-hidden="true">◈</div>
+        <h3 class="b-name">Pigmentación</h3>
+        <p class="b-desc">Relleno y definición con pigmento semipermanente. Cejas densas, efecto natural.</p>
+        <p class="b-price">Consultar precio</p>
+      </article>
+      <article class="b-card r d2">
+        <div class="b-icon" aria-hidden="true">✦</div>
+        <h3 class="b-name">Diseño de Cejas</h3>
+        <p class="b-desc">Diseño personalizado según tu estructura facial. Geometría perfecta, marco ideal.</p>
+        <p class="b-price">Consultar precio</p>
+      </article>
     </div>
   </div>
 </section>
 
 <!-- GALLERY -->
-<section id="galeria" class="gallery">
+<section id="galeria" class="gallery" aria-label="Galería de trabajos">
   <div class="wrap">
     <div class="sec-hd">
       <span class="label r">El Arte</span>
       <h2 class="sec-title r d1">Galería</h2>
       <p class="r d2" style="font-style:italic;color:var(--ink-d);font-size:15px;margin-top:10px">Arrastra para explorar — cada imagen, una historia.</p>
-      <div class="gold-rule r d3"></div>
+      <div class="gold-rule r d3" aria-hidden="true"></div>
     </div>
   </div>
   <div class="wrap">
-    <div class="g-track" id="gTrack">
-      <div class="g-item"><img loading="lazy" alt="Clásico" src="https://images.unsplash.com/photo-1519741497674-611481863552?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay"><span class="g-label">Clásico</span></div></div>
-      <div class="g-item"><img loading="lazy" alt="Fade" src="https://images.unsplash.com/photo-1593702171957-88c9fc049eb7?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay"><span class="g-label">Fade</span></div></div>
-      <div class="g-item"><img loading="lazy" alt="Premium" src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay"><span class="g-label">Premium</span></div></div>
-      <div class="g-item"><img loading="lazy" alt="Taper" src="https://images.unsplash.com/photo-1503951458645-643d53bfd90f?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay"><span class="g-label">Taper</span></div></div>
-      <div class="g-item"><img loading="lazy" alt="Detalle" src="https://images.unsplash.com/photo-1617137968427-85924c800a22?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay"><span class="g-label">Modern</span></div></div>
-      <div class="g-item"><img loading="lazy" alt="Barba" src="https://images.unsplash.com/photo-1622286343049-57ff1a41f4fd?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay"><span class="g-label">Barba</span></div></div>
-      <div class="g-item"><img loading="lazy" alt="Estilo" src="https://images.unsplash.com/photo-1490135900376-4a6dc4954b09?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay"><span class="g-label">Estilo</span></div></div>
+    <div class="g-track" id="gTrack" role="list" aria-label="Galería de cortes">
+      <div class="g-item" role="listitem"><img loading="lazy" alt="Corte clásico en Chitagá" src="https://images.unsplash.com/photo-1519741497674-611481863552?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay" aria-hidden="true"><span class="g-label">Clásico</span></div></div>
+      <div class="g-item" role="listitem"><img loading="lazy" alt="Fade sombreado barbería Chitagá" src="https://images.unsplash.com/photo-1593702171957-88c9fc049eb7?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay" aria-hidden="true"><span class="g-label">Fade</span></div></div>
+      <div class="g-item" role="listitem"><img loading="lazy" alt="Servicio premium con barba" src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay" aria-hidden="true"><span class="g-label">Premium</span></div></div>
+      <div class="g-item" role="listitem"><img loading="lazy" alt="Taper fade barbería" src="https://images.unsplash.com/photo-1503951458645-643d53bfd90f?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay" aria-hidden="true"><span class="g-label">Taper</span></div></div>
+      <div class="g-item" role="listitem"><img loading="lazy" alt="Estilo moderno barbería" src="https://images.unsplash.com/photo-1617137968427-85924c800a22?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay" aria-hidden="true"><span class="g-label">Modern</span></div></div>
+      <div class="g-item" role="listitem"><img loading="lazy" alt="Perfilado de barba profesional" src="https://images.unsplash.com/photo-1622286343049-57ff1a41f4fd?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay" aria-hidden="true"><span class="g-label">Barba</span></div></div>
+      <div class="g-item" role="listitem"><img loading="lazy" alt="Estilo clásico rock barbería" src="https://images.unsplash.com/photo-1490135900376-4a6dc4954b09?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay" aria-hidden="true"><span class="g-label">Estilo</span></div></div>
     </div>
   </div>
 </section>
 
 <!-- LOCATION -->
-<section id="ubicacion" class="location">
+<section id="ubicacion" class="location" aria-label="Ubicación y contacto">
   <div class="wrap">
     <div class="sec-hd">
       <span class="label r">Encuéntranos</span>
       <h2 class="sec-title r d1">Ubicación</h2>
-      <div class="gold-rule r d2"></div>
+      <div class="gold-rule r d2" aria-hidden="true"></div>
     </div>
     <div class="loc-grid">
-      <div class="loc-map r"><iframe title="Mapa Chitagá" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Chitagá%2C%20Norte%20de%20Santander%2C%20Colombia&hl=es&z=15&output=embed" width="100%" height="380"></iframe></div>
+      <div class="loc-map r">
+        <iframe title="Mapa de Chitagá, Norte de Santander" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Chitagá%2C%20Norte%20de%20Santander%2C%20Colombia&hl=es&z=15&output=embed" width="100%" height="400"></iframe>
+      </div>
       <div class="r d1">
-        <div class="info-row"><div class="info-ico">📍</div><div><p class="info-lbl">Dirección</p><p class="info-val">Calle 3 #7-12 · Chitagá<br>Norte de Santander, Colombia</p></div></div>
-        <div class="info-row"><div class="info-ico">📱</div><div><p class="info-lbl">WhatsApp · Teléfono</p><p class="info-val"><a href="https://wa.me/573142261626" target="_blank" rel="noopener">314 226 1626</a></p></div></div>
-        <div class="info-row"><div class="info-ico">⏰</div><div><p class="info-lbl">Horario</p><p class="info-val">Lunes – Sábado · 9:00 am – 7:00 pm</p></div></div>
-        <div class="info-row"><div class="info-ico">👤</div><div><p class="info-lbl">Propietario</p><p class="info-val">Darianny Basto</p></div></div>
-        <div style="margin-top:28px"><a href="https://wa.me/573142261626?text=Hola%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" class="btn btn-gold">Agendar por WhatsApp</a></div>
+        <div class="info-row">
+          <div class="info-ico" aria-hidden="true">📍</div>
+          <div><p class="info-lbl">Dirección</p><p class="info-val">Calle 3 #7-12 · Chitagá<br>Norte de Santander, Colombia</p></div>
+        </div>
+        <div class="info-row">
+          <div class="info-ico" aria-hidden="true">📱</div>
+          <div><p class="info-lbl">WhatsApp · Teléfono</p><p class="info-val"><a href="https://wa.me/573142261626" target="_blank" rel="noopener noreferrer">314 226 1626</a></p></div>
+        </div>
+        <div class="info-row">
+          <div class="info-ico" aria-hidden="true">⏰</div>
+          <div><p class="info-lbl">Horario</p><p class="info-val">Lunes – Sábado<br>9:00 am – 7:00 pm</p></div>
+        </div>
+        <div class="info-row">
+          <div class="info-ico" aria-hidden="true">👤</div>
+          <div><p class="info-lbl">Propietario</p><p class="info-val">Darianny Basto</p></div>
+        </div>
+        <div style="margin-top:30px">
+          <a href="https://wa.me/573142261626?text=Hola%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener noreferrer" class="btn btn-gold">Agendar por WhatsApp</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section class="cta-sec">
+<section class="cta-sec" aria-label="Agenda tu cita">
   <div class="wrap">
-    <div class="cta-tri r"></div>
+    <div class="cta-tri r" aria-hidden="true"></div>
     <h2 class="cta-h2 r d1">¿Listo para tu<br>próximo corte?</h2>
     <p class="cta-sub r d2">Escríbenos y agendamos tu cita. Sin filas, sin esperas.</p>
     <div class="cta-btns r d3">
-      <a href="https://wa.me/573142261626?text=Hola%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" class="btn btn-gold">Agendar por WhatsApp</a>
+      <a href="https://wa.me/573142261626?text=Hola%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener noreferrer" class="btn btn-gold">Agendar por WhatsApp</a>
       <a href="tel:+573142261626" class="btn btn-outline">Llamar ahora</a>
     </div>
   </div>
@@ -398,56 +492,100 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:44px 0 28
 <footer>
   <div class="wrap ft-in">
     <div class="ft-brand">Illuminati Barber Shop<small>"Un día a la vez"</small></div>
-    <div class="ft-tri"></div>
-    <div class="ft-copy">Chitagá · Norte de Santander<br>© 2025 Illuminati Barber Shop</div>
+    <div class="ft-tri" aria-hidden="true"></div>
+    <div class="ft-copy">Chitagá · Norte de Santander<br>© 2025 Illuminati Barber Shop · Darianny Basto</div>
   </div>
 </footer>
 
 <!-- FLOATING BUTTONS -->
-<a class="wa-float" href="https://wa.me/573142261626" target="_blank" rel="noopener" aria-label="WhatsApp">
+<a class="wa-float" href="https://wa.me/573142261626" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   WhatsApp
 </a>
-<button class="snd-btn" id="sndBtn" aria-label="Toggle sonido" title="Activar / silenciar sonido">
-  <span class="on">🎵</span><span class="off">🔇</span>
+<button class="snd-btn" id="sndBtn" aria-label="Activar sonido ambiente" title="Activar / silenciar sonido">
+  <span class="on" aria-hidden="true">🎵</span><span class="off" aria-hidden="true">🔇</span>
 </button>
 
 <script>
 (function(){
 'use strict';
-let ctx=null,droneNodes=null,soundOn=false;
-function initCtx(){if(ctx)return;ctx=new(window.AudioContext||window.webkitAudioContext)();}
-function startDrone(){
+
+/* ── Audio Engine ──────────────────────────────────────────── */
+let ctx=null,droneNodes=null,reverbNode=null,soundOn=false;
+
+function initCtx(){
+  if(ctx)return;
+  ctx=new(window.AudioContext||window.webkitAudioContext)();
+}
+
+async function buildReverb(){
+  if(!ctx||reverbNode)return reverbNode;
+  const conv=ctx.createConvolver();
+  const sr=ctx.sampleRate,len=sr*2.4,buf=ctx.createBuffer(2,len,sr);
+  for(let c=0;c<2;c++){
+    const d=buf.getChannelData(c);
+    for(let i=0;i<len;i++) d[i]=(Math.random()*2-1)*Math.pow(1-i/len,2.2);
+  }
+  conv.buffer=buf;
+  reverbNode=conv;
+  return reverbNode;
+}
+
+async function startDrone(){
   if(!ctx||droneNodes)return;
+  const rev=await buildReverb();
   const master=ctx.createGain();
   master.gain.setValueAtTime(0,ctx.currentTime);
-  master.gain.linearRampToValueAtTime(0.055,ctx.currentTime+4);
-  master.connect(ctx.destination);
-  const bass=ctx.createOscillator(),bassGain=ctx.createGain();
-  bass.type='sawtooth';bass.frequency.value=55;bassGain.gain.value=0.35;
-  const lfo=ctx.createOscillator(),lfoG=ctx.createGain();
-  lfo.frequency.value=0.25;lfoG.gain.value=1.2;
-  lfo.connect(lfoG);lfoG.connect(bass.frequency);
-  const lpf=ctx.createBiquadFilter();
-  lpf.type='lowpass';lpf.frequency.value=380;lpf.Q.value=0.7;
-  bass.connect(bassGain);bassGain.connect(lpf);lpf.connect(master);
-  const h2=ctx.createOscillator(),h2g=ctx.createGain();
-  h2.type='sine';h2.frequency.value=110;h2g.gain.value=0.1;
-  h2.connect(h2g);h2g.connect(master);
-  const sr=ctx.sampleRate,len=sr*3,buf=ctx.createBuffer(1,len,sr),d=buf.getChannelData(0);
-  for(let i=0;i<len;i++)d[i]=(Math.random()*2-1);
-  const ns=ctx.createBufferSource();ns.buffer=buf;ns.loop=true;
-  const nbp=ctx.createBiquadFilter();nbp.type='bandpass';nbp.frequency.value=180;nbp.Q.value=0.4;
-  const ng=ctx.createGain();ng.gain.value=0.007;
+  master.gain.linearRampToValueAtTime(0.05,ctx.currentTime+4.5);
+  const dryGain=ctx.createGain();dryGain.gain.value=0.7;
+  const wetGain=ctx.createGain();wetGain.gain.value=0.3;
+  master.connect(dryGain);dryGain.connect(ctx.destination);
+  master.connect(rev);rev.connect(wetGain);wetGain.connect(ctx.destination);
+
+  // Root drone — A1 (55Hz) sawtooth with pitch-LFO
+  const bass=ctx.createOscillator(),bassG=ctx.createGain();
+  bass.type='sawtooth';bass.frequency.value=55;bassG.gain.value=0.34;
+  const pitchLfo=ctx.createOscillator(),pitchLfoG=ctx.createGain();
+  pitchLfo.frequency.value=0.18;pitchLfoG.gain.value=1.1;
+  pitchLfo.connect(pitchLfoG);pitchLfoG.connect(bass.frequency);
+  const lpf=ctx.createBiquadFilter();lpf.type='lowpass';lpf.frequency.value=360;lpf.Q.value=0.65;
+  bass.connect(bassG);bassG.connect(lpf);lpf.connect(master);
+
+  // Octave — A2 (110Hz) sine
+  const h2=ctx.createOscillator(),h2G=ctx.createGain();
+  h2.type='sine';h2.frequency.value=110;h2G.gain.value=0.09;
+  h2.connect(h2G);h2G.connect(master);
+
+  // Fifth — E2 (82.4Hz) sine, gentle tremolo
+  const fifth=ctx.createOscillator(),fifthG=ctx.createGain();
+  fifth.type='sine';fifth.frequency.value=82.407;fifthG.gain.value=0.06;
+  const tremLfo=ctx.createOscillator(),tremG=ctx.createGain();
+  tremLfo.frequency.value=0.31;tremG.gain.value=0.025;
+  tremLfo.connect(tremG);tremG.connect(fifthG.gain);
+  fifth.connect(fifthG);fifthG.connect(master);
+
+  // Noise floor (amp hiss)
+  const noiseLen=ctx.sampleRate*3,noiseBuf=ctx.createBuffer(1,noiseLen,ctx.sampleRate),nd=noiseBuf.getChannelData(0);
+  for(let i=0;i<noiseLen;i++)nd[i]=(Math.random()*2-1);
+  const ns=ctx.createBufferSource();ns.buffer=noiseBuf;ns.loop=true;
+  const nbp=ctx.createBiquadFilter();nbp.type='bandpass';nbp.frequency.value=175;nbp.Q.value=0.38;
+  const ng=ctx.createGain();ng.gain.value=0.006;
   ns.connect(nbp);nbp.connect(ng);ng.connect(master);
-  bass.start();lfo.start();h2.start();ns.start();
-  droneNodes={master,bass,lfo,h2,ns};
+
+  bass.start();pitchLfo.start();h2.start();fifth.start();tremLfo.start();ns.start();
+  droneNodes={master,bass,pitchLfo,h2,fifth,tremLfo,ns,dryGain,wetGain};
 }
+
 function stopDrone(){
   if(!droneNodes)return;
-  droneNodes.master.gain.linearRampToValueAtTime(0,ctx.currentTime+1.5);
-  setTimeout(()=>{try{droneNodes.bass.stop();droneNodes.lfo.stop();droneNodes.h2.stop();droneNodes.ns.stop();}catch(e){}droneNodes=null;},1600);
+  droneNodes.master.gain.linearRampToValueAtTime(0,ctx.currentTime+1.8);
+  const snap=droneNodes;
+  setTimeout(()=>{
+    ['bass','pitchLfo','h2','fifth','tremLfo','ns'].forEach(k=>{try{snap[k].stop();}catch(e){}});
+    droneNodes=null;
+  },1900);
 }
+
 function playClick(){
   if(!ctx||!soundOn)return;
   const o=ctx.createOscillator(),g=ctx.createGain(),dist=ctx.createWaveShaper();
@@ -455,52 +593,132 @@ function playClick(){
   for(let i=0;i<256;i++){const x=(i*2)/256-1;c[i]=(Math.PI+20)*x*20*(Math.PI/180)/(Math.PI+20*Math.abs(x));}
   dist.curve=c;
   o.type='square';
-  o.frequency.setValueAtTime(900,ctx.currentTime);
-  o.frequency.exponentialRampToValueAtTime(70,ctx.currentTime+.045);
-  g.gain.setValueAtTime(.25,ctx.currentTime);
-  g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.06);
+  o.frequency.setValueAtTime(860,ctx.currentTime);
+  o.frequency.exponentialRampToValueAtTime(65,ctx.currentTime+.048);
+  g.gain.setValueAtTime(.22,ctx.currentTime);
+  g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.065);
   o.connect(dist);dist.connect(g);g.connect(ctx.destination);
   o.start();o.stop(ctx.currentTime+.07);
 }
+
 let lastScrollSnd=0;
 function playScrollTick(){
   if(!ctx||!soundOn)return;
   const now=performance.now();
-  if(now-lastScrollSnd<120)return;
+  if(now-lastScrollSnd<110)return;
   lastScrollSnd=now;
-  const len=Math.floor(ctx.sampleRate*.018),buf=ctx.createBuffer(1,len,ctx.sampleRate),d=buf.getChannelData(0);
+  const len=Math.floor(ctx.sampleRate*.016),buf=ctx.createBuffer(1,len,ctx.sampleRate),d=buf.getChannelData(0);
   for(let i=0;i<len;i++)d[i]=(Math.random()*2-1)*(1-i/len);
   const src=ctx.createBufferSource();src.buffer=buf;
-  const g=ctx.createGain();g.gain.value=.04;
-  const lpf=ctx.createBiquadFilter();lpf.type='lowpass';lpf.frequency.value=3000;
+  const g=ctx.createGain();g.gain.value=.038;
+  const lpf=ctx.createBiquadFilter();lpf.type='lowpass';lpf.frequency.value=2800;
   src.connect(lpf);lpf.connect(g);g.connect(ctx.destination);src.start();
 }
+
+/* Audio toggle */
 const sndBtn=document.getElementById('sndBtn');
 sndBtn.addEventListener('click',()=>{
   initCtx();
   if(ctx.state==='suspended')ctx.resume();
   soundOn=!soundOn;
   sndBtn.classList.toggle('muted',!soundOn);
+  sndBtn.classList.toggle('active',soundOn);
+  sndBtn.setAttribute('aria-label', soundOn ? 'Silenciar sonido' : 'Activar sonido ambiente');
   if(soundOn){startDrone();}else{stopDrone();}
   playClick();
 });
+
+/* Global click sound */
 document.addEventListener('click',e=>{
-  if(e.target.closest('.snd-btn'))return;
+  if(e.target.closest('#sndBtn'))return;
   if(!soundOn)return;
   initCtx();if(ctx.state==='suspended')ctx.resume();
   playClick();
 },{passive:true});
+
+/* Scroll sound */
 window.addEventListener('scroll',()=>{if(!soundOn)return;playScrollTick();},{passive:true});
+
+/* ── Nav ───────────────────────────────────────────────────── */
 const navEl=document.getElementById('nav');
 window.addEventListener('scroll',()=>navEl.classList.toggle('scrolled',window.scrollY>60),{passive:true});
+
 const navTog=document.getElementById('navTog'),navLinks=document.getElementById('navLinks');
-navTog.addEventListener('click',()=>{navTog.classList.toggle('open');navLinks.classList.toggle('open');});
-navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navTog.classList.remove('open');navLinks.classList.remove('open');}));
-const revObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');revObs.unobserve(e.target);}});},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+navTog.addEventListener('click',()=>{
+  const isOpen=navTog.classList.toggle('open');
+  navLinks.classList.toggle('open',isOpen);
+  navTog.setAttribute('aria-expanded',isOpen);
+  document.body.style.overflow=isOpen?'hidden':'';
+});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  navTog.classList.remove('open');navLinks.classList.remove('open');
+  navTog.setAttribute('aria-expanded','false');
+  document.body.style.overflow='';
+}));
+
+/* ── Hero Parallax ─────────────────────────────────────────── */
+const heroBg=document.getElementById('heroBg');
+const prefersReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(heroBg&&!prefersReducedMotion){
+  let ticking=false;
+  window.addEventListener('scroll',()=>{
+    if(!ticking){
+      requestAnimationFrame(()=>{
+        heroBg.style.transform='translateY('+Math.round(window.scrollY*.38)+'px)';
+        ticking=false;
+      });
+      ticking=true;
+    }
+  },{passive:true});
+}
+
+/* ── Scroll Reveal ─────────────────────────────────────────── */
+const revObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('on');revObs.unobserve(e.target);}
+  });
+},{threshold:.08,rootMargin:'0px 0px -36px 0px'});
 document.querySelectorAll('.r').forEach(el=>revObs.observe(el));
+
+/* ── Service Cards 3D Tilt ─────────────────────────────────── */
+if(!prefersReducedMotion&&window.matchMedia('(pointer:fine)').matches){
+  document.querySelectorAll('.s-card').forEach(card=>{
+    card.addEventListener('mousemove',e=>{
+      const r=card.getBoundingClientRect();
+      const x=(e.clientX-r.left)/r.width-.5;
+      const y=(e.clientY-r.top)/r.height-.5;
+      card.style.transform=`translateY(-6px) perspective(600px) rotateY(${x*10}deg) rotateX(${-y*10}deg)`;
+    });
+    card.addEventListener('mouseleave',()=>{
+      card.style.transform='';
+    });
+  });
+}
+
+/* ── Gallery Drag ──────────────────────────────────────────── */
 const gTrack=document.getElementById('gTrack');
-if(gTrack){let down=false,sx,sl;gTrack.addEventListener('mousedown',e=>{down=true;sx=e.pageX-gTrack.offsetLeft;sl=gTrack.scrollLeft;});gTrack.addEventListener('mouseleave',()=>down=false);gTrack.addEventListener('mouseup',()=>down=false);gTrack.addEventListener('mousemove',e=>{if(!down)return;e.preventDefault();gTrack.scrollLeft=sl-(e.pageX-gTrack.offsetLeft-sx)*1.6;});}
-window.addEventListener('load',()=>setTimeout(()=>document.getElementById('loader').classList.add('out'),1500));
+if(gTrack){
+  /* Mouse drag */
+  let down=false,sx=0,sl=0;
+  gTrack.addEventListener('mousedown',e=>{
+    down=true;sx=e.pageX-gTrack.offsetLeft;sl=gTrack.scrollLeft;
+    gTrack.classList.add('dragging');
+  });
+  gTrack.addEventListener('mouseleave',()=>{down=false;gTrack.classList.remove('dragging');});
+  gTrack.addEventListener('mouseup',()=>{down=false;gTrack.classList.remove('dragging');});
+  gTrack.addEventListener('mousemove',e=>{
+    if(!down)return;
+    e.preventDefault();
+    gTrack.scrollLeft=sl-(e.pageX-gTrack.offsetLeft-sx)*1.7;
+  });
+}
+
+/* ── Loader ────────────────────────────────────────────────── */
+window.addEventListener('load',()=>setTimeout(()=>{
+  const loader=document.getElementById('loader');
+  if(loader)loader.classList.add('out');
+},1600));
+
 })();
 </script>
 </body>
