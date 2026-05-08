@@ -2,203 +2,506 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ILLUMINATI BARBER SHOP — Un día a la vez | Chitagá</title>
-<meta name="description" content="Illuminati Barber Shop en Chitagá."un dia a la vez". WhatsApp 314 226 1626. Propietario: Darianny Basto.">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0c0a06">
+<title>Illuminati Barber Shop · Un día a la vez · Chitagá</title>
+<meta name="description" content="Barbería premium en Chitagá, Norte de Santander. Cortes, fade, diseño de cejas y más. WhatsApp: 314 226 1626.">
+<meta property="og:title" content="Illuminati Barber Shop">
+<meta property="og:description" content="Un día a la vez. Arte en cada corte, actitud en cada hoja.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --bg:#0b0b0b;
-    --paper:#f5f5f5;
-    --line:#1c1c1c;
-    --panel:#121212;
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0;background:var(--bg);color:var(--paper);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Inter,Arial,sans-serif}
-  img{max-width:100%;display:block;filter:grayscale(100%);}
-  a{color:#fff;text-decoration:none}
-  .container{width:min(1150px,92%);margin:auto}
-  /* ribbon BN */
-  .ribbon{height:8px;background:repeating-linear-gradient(45deg,#000 0 18px,#fff 18px 36px)}
-  /* nav */
-  nav{position:sticky;top:0;z-index:50;background:rgba(7,7,7,.92);backdrop-filter:saturate(160%) blur(6px);border-bottom:1px solid var(--line)}
-  .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-  .brand{font-family:ui-serif,Georgia,'Times New Roman',serif;letter-spacing:.15em;font-weight:900}
-  .links a{margin-left:18px;opacity:.9;font-weight:700}
-  .links a:hover{opacity:1}
-  /* hero */
-  .hero{position:relative;min-height:66vh;display:grid;place-items:center;overflow:hidden;border-bottom:1px solid var(--line)}
-  .hero::before{content:"";position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2400&auto=format&fit=crop') center/cover no-repeat;filter:grayscale(100%) contrast(120%) brightness(55%);}
-  .hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.88))}
-  .hero .wrap{position:relative;z-index:1;text-align:center;padding:56px 0}
-  h1{margin:0 0 10px;font-size:clamp(34px,8vw,72px);letter-spacing:.12em;text-transform:uppercase;font-family:ui-serif,Georgia,'Times New Roman',serif}
-  .sub{opacity:.85;margin-bottom:18px}
-  .btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
-  .btn{padding:12px 18px;border:2px solid #fff;border-radius:12px;background:transparent;color:#fff;font-weight:800}
-  .btn.solid{background:#fff;color:#000}
-  section{padding:72px 0}
-  h2{font-size:clamp(22px,4vw,30px);text-transform:uppercase;letter-spacing:.1em;text-align:center;margin:0 0 10px;font-family:ui-serif,Georgia,'Times New Roman',serif}
-  .lead{text-align:center;opacity:.8;margin:0 0 26px}
-  /* alternating rows */
-  .row{display:grid;grid-template-columns:1fr;gap:22px;align-items:center;margin-bottom:34px}
-  .panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:0 20px 40px #0006;overflow:hidden}
-  .pad{padding:18px 18px 22px}
-  .price{font-weight:900;margin-top:8px}
-  .note{opacity:.9}
-  @media(min-width:980px){.row{grid-template-columns:1.1fr .9fr} .rev{grid-template-columns:.9fr 1.1fr}}
-  /* gallery slider */
-  .slider{display:grid;grid-auto-flow:column;grid-auto-columns:80%;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
-  .slider > img{scroll-snap-align:center;width:100%;height:320px;object-fit:cover;border-radius:14px;border:1px solid var(--line);box-shadow:0 16px 36px #0007}
-  @media(min-width:900px){.slider{grid-auto-columns:33%} .slider>img{height:260px}}
-  /* contact */
-  .contact{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;text-align:center}
-  .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:12px}
-  /* footer */
-  footer{background:#0a0a0a;border-top:1px solid var(--line)}
-  footer .container{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:18px 0;flex-wrap:wrap}
-  .owner{opacity:.9}
-  /* floating wa */
-  .wa{position:fixed;right:16px;bottom:16px;background:#25D366;color:#000;padding:12px 16px;border-radius:999px;font-weight:900;box-shadow:0 12px 30px #0009}
-  .wa:hover{filter:brightness(1.1)}
-  /* audio hint */
-  .hint{font-size:12px;opacity:.7;text-align:center;margin-top:6px}
+:root{
+  --bg:#0c0a06;--s1:#111009;--s2:#1a160e;--s3:#231e14;--s4:#2d2619;
+  --gold:#c8a050;--gold-l:#e0b86a;--gold-dim:rgba(200,160,80,.12);--gold-b:rgba(200,160,80,.28);
+  --red:#8b1a1a;
+  --ink:#f0e8d8;--ink-d:rgba(240,232,216,.62);--ink-dd:rgba(240,232,216,.32);
+  --border:rgba(240,232,216,.06);
+  --fD:'Cinzel',serif;--fH:'Playfair Display',serif;--fB:'Lora',serif;
+  --ease:.25s cubic-bezier(.25,.46,.45,.94);
+}
+*,::before,::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--fB);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
+ul{list-style:none}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E");background-size:160px}
+.wrap{width:min(1140px,92%);margin:0 auto}
+.section{padding:clamp(72px,10vw,130px) 0}
+.r{opacity:0;transform:translateY(32px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.r.on{opacity:1;transform:none}
+.r.d1{transition-delay:.1s}.r.d2{transition-delay:.2s}.r.d3{transition-delay:.3s}.r.d4{transition-delay:.4s}
+@media(prefers-reduced-motion:reduce){.r{opacity:1;transform:none;transition:none}}
+
+/* LOADER */
+#loader{position:fixed;inset:0;z-index:9999;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;transition:opacity .6s var(--ease),visibility .6s}
+#loader.out{opacity:0;visibility:hidden;pointer-events:none}
+.loader-tri svg{width:70px;height:auto}
+.loader-tri .tri-path{stroke-dasharray:300;stroke-dashoffset:300;animation:drawTri 1s .2s cubic-bezier(.4,0,.2,1) forwards}
+@keyframes drawTri{to{stroke-dashoffset:0}}
+.loader-text{font-family:var(--fD);font-size:13px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);opacity:0;animation:fadeUp .5s .9s ease forwards}
+.loader-bar{width:120px;height:1px;background:var(--border);overflow:hidden}
+.loader-bar::after{content:'';display:block;height:100%;width:0;background:var(--gold);animation:barFill .8s .4s ease forwards}
+@keyframes barFill{to{width:100%}}@keyframes fadeUp{to{opacity:1}}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;border-bottom:1px solid transparent;transition:background .4s,border-color .4s,padding .4s}
+nav.scrolled{background:rgba(12,10,6,.93);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);border-bottom-color:var(--border)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+nav.scrolled .nav-in{padding:15px 0}
+.nav-brand{font-family:var(--fD);font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:10px}
+.brand-tri{width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:12px solid var(--gold);flex-shrink:0}
+.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links a{font-family:var(--fD);font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-d);transition:color var(--ease)}
+.nav-links a:hover{color:var(--gold)}
+.nav-wa{background:var(--gold);color:var(--bg)!important;padding:9px 20px;border-radius:3px;transition:background var(--ease),transform var(--ease)!important}
+.nav-wa:hover{background:var(--gold-l)!important;transform:translateY(-1px)}
+.nav-tog{display:none;flex-direction:column;gap:5px;padding:4px;width:32px}
+.nav-tog span{display:block;height:2px;background:var(--ink);border-radius:2px;transition:transform .3s,opacity .3s,width .3s}
+.nav-tog span:nth-child(3){width:70%}
+.nav-tog.open span:first-child{transform:translateY(7px) rotate(45deg);width:100%}
+.nav-tog.open span:nth-child(2){opacity:0}
+.nav-tog.open span:last-child{transform:translateY(-7px) rotate(-45deg);width:100%}
+@media(max-width:800px){
+  .nav-links{display:none;position:fixed;inset:0;top:0;padding-top:80px;background:rgba(12,10,6,.97);backdrop-filter:blur(24px);flex-direction:column;align-items:center;justify-content:center;gap:28px}
+  .nav-links.open{display:flex}
+  .nav-links a{font-size:18px;letter-spacing:.12em}
+  .nav-tog{display:flex}
+}
+
+/* HERO */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1503951458645-643d53bfd90f?q=85&w=2400&fm=webp&auto=format&fit=crop') center/cover no-repeat;filter:sepia(15%) brightness(.28) contrast(1.3);will-change:transform}
+.hero-overlay{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 50%,transparent 30%,rgba(12,10,6,.6) 100%),linear-gradient(180deg,rgba(12,10,6,.2) 0%,transparent 40%,rgba(12,10,6,.95) 100%)}
+.hero::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;z-index:2;background:linear-gradient(180deg,transparent,var(--gold) 30%,var(--gold) 70%,transparent);opacity:.5}
+.hero-content{position:relative;z-index:2;padding:140px 0 100px;max-width:700px}
+.hero-eyebrow{display:flex;align-items:center;gap:14px;font-family:var(--fD);font-size:10px;font-weight:700;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);margin-bottom:32px}
+.hero-eyebrow::before{content:'';display:block;width:44px;height:1px;background:var(--gold)}
+.hero-h1{font-family:var(--fH);font-size:clamp(44px,9vw,108px);font-weight:900;line-height:.9;letter-spacing:-.02em;text-transform:uppercase;margin-bottom:8px}
+.hero-h1 .line2{display:block;font-style:italic;color:var(--gold);font-size:.72em;letter-spacing:.04em;line-height:1.1;margin-top:4px}
+.hero-h1 .slug{display:block;font-family:var(--fB);font-style:italic;font-weight:400;font-size:.28em;letter-spacing:.06em;color:var(--ink-d);margin-top:14px}
+.hero-divider{width:80px;height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin:28px 0}
+.hero-sub{font-size:clamp(15px,1.8vw,18px);color:var(--ink-d);font-style:italic;line-height:1.65;margin-bottom:44px;max-width:460px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.hero-scroll{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--ink-dd);font-family:var(--fD);font-size:9px;letter-spacing:.3em;text-transform:uppercase}
+.scroll-line{width:1px;height:48px;background:linear-gradient(180deg,var(--gold),transparent);animation:scrollPulse 2s ease-in-out infinite}
+@keyframes scrollPulse{0%,100%{opacity:.25;transform:scaleY(.8)}55%{opacity:1;transform:scaleY(1)}}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--fD);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:14px 28px;border-radius:3px;transition:all .25s var(--ease);border:1px solid transparent}
+.btn-gold{background:var(--gold);color:var(--bg);border-color:var(--gold)}
+.btn-gold:hover{background:var(--gold-l);border-color:var(--gold-l);transform:translateY(-2px);box-shadow:0 8px 24px rgba(200,160,80,.25)}
+.btn-outline{background:transparent;color:var(--ink);border-color:rgba(240,232,216,.25)}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+
+/* MARQUEE */
+.marquee-wrap{background:var(--gold);padding:14px 0;overflow:hidden}
+.marquee-inner{display:flex;gap:52px;width:max-content;animation:mq 28s linear infinite}
+.marquee-inner span{font-family:var(--fD);font-size:10px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--bg);white-space:nowrap}
+.marquee-inner .dot{opacity:.4;font-size:6px}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ABOUT */
+.about{padding:clamp(72px,10vw,130px) 0}
+.about-grid{display:grid;grid-template-columns:1fr;gap:48px}
+@media(min-width:768px){.about-grid{grid-template-columns:1fr 1fr;gap:72px;align-items:center}}
+.label{font-family:var(--fD);font-size:10px;font-weight:700;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.sec-title{font-family:var(--fH);font-size:clamp(28px,4vw,52px);font-weight:900;text-transform:uppercase;letter-spacing:.02em;line-height:1;margin-bottom:22px}
+.about-body{font-size:17px;color:var(--ink-d);font-style:italic;line-height:1.8}
+.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:36px}
+.stat{background:var(--s2);border:1px solid var(--border);border-radius:6px;padding:18px 16px}
+.stat-n{font-family:var(--fD);font-size:28px;font-weight:900;color:var(--gold);line-height:1}
+.stat-l{font-size:12px;color:var(--ink-dd);letter-spacing:.05em;margin-top:5px}
+.about-img-wrap{position:relative;order:-1}
+@media(min-width:768px){.about-img-wrap{order:0}}
+.about-img-wrap::before{content:'';position:absolute;inset:-3px;border-radius:12px;background:linear-gradient(135deg,var(--gold),transparent 55%);z-index:0}
+.about-img-wrap img{position:relative;z-index:1;width:100%;aspect-ratio:3/4;object-fit:cover;filter:sepia(8%) grayscale(30%) contrast(1.1);border-radius:10px}
+
+/* SECTION HEADER */
+.sec-hd{text-align:center;margin-bottom:clamp(44px,6vw,72px)}
+.sec-hd .label{display:block}
+.gold-rule{width:72px;height:1px;margin:16px auto 0;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.hr-gold{display:flex;align-items:center;gap:18px;margin-bottom:36px}
+.hr-gold h3{font-family:var(--fD);font-size:clamp(16px,2vw,22px);font-weight:700;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;color:var(--gold-l)}
+.hr-gold::after{content:'';flex:1;height:1px;background:var(--border)}
+
+/* SERVICES */
+.services{padding:clamp(72px,10vw,130px) 0;background:var(--s1);position:relative}
+.services::before,.services::after{content:'';position:absolute;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,160,80,.2),transparent)}
+.services::before{top:0}.services::after{bottom:0}
+.cuts-grid{display:grid;grid-template-columns:1fr;gap:22px;margin-bottom:72px}
+@media(min-width:600px){.cuts-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.cuts-grid{grid-template-columns:repeat(3,1fr)}}
+.s-card{background:var(--s2);border:1px solid var(--border);border-radius:12px;overflow:hidden;position:relative;transition:transform var(--ease),border-color var(--ease),box-shadow var(--ease);contain:layout style}
+.s-card:hover{transform:translateY(-6px);border-color:var(--gold-b);box-shadow:0 20px 56px rgba(0,0,0,.5),0 0 0 1px rgba(200,160,80,.08)}
+.s-card-img{width:100%;height:220px;object-fit:cover;filter:sepia(10%) grayscale(40%) contrast(1.15) brightness(.9);transition:filter .45s,transform .5s}
+.s-card:hover .s-card-img{filter:sepia(5%) grayscale(0%) contrast(1.1);transform:scale(1.04)}
+.s-card-body{padding:24px}
+.s-num{font-family:var(--fD);font-size:9px;letter-spacing:.35em;color:var(--gold);margin-bottom:10px}
+.s-name{font-family:var(--fH);font-size:20px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;line-height:1.1;margin-bottom:10px}
+.s-desc{font-size:14px;color:var(--ink-d);line-height:1.65;margin-bottom:18px}
+.s-price{font-family:var(--fD);font-size:22px;font-weight:700;color:var(--gold);margin-bottom:18px}
+.s-price small{font-size:11px;opacity:.6;font-weight:400}
+.s-btn{display:block;text-align:center;padding:11px;border:1px solid var(--gold-b);border-radius:3px;font-family:var(--fD);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);transition:all .2s}
+.s-btn:hover{background:var(--gold);color:var(--bg)}
+.brow-grid{display:grid;grid-template-columns:1fr;gap:18px}
+@media(min-width:600px){.brow-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.brow-grid{grid-template-columns:repeat(3,1fr)}}
+.b-card{background:var(--s3);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:8px;padding:24px;position:relative;overflow:hidden;transition:transform var(--ease),box-shadow var(--ease);contain:layout style}
+.b-card::after{content:'';position:absolute;top:0;right:0;width:44px;height:44px;background:var(--gold-dim);clip-path:polygon(100% 0,0 0,100% 100%)}
+.b-card:hover{transform:translateY(-4px);box-shadow:0 14px 40px rgba(0,0,0,.4)}
+.b-icon{font-size:24px;margin-bottom:14px;line-height:1}
+.b-name{font-family:var(--fD);font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+.b-desc{font-size:13px;color:var(--ink-d);line-height:1.6;margin-bottom:14px}
+.b-price{font-family:var(--fH);font-size:14px;font-style:italic;color:var(--ink-dd)}
+.new-badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--fD);font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;background:var(--gold);color:var(--bg);padding:6px 16px;border-radius:3px;margin-bottom:36px}
+
+/* GALLERY */
+.gallery{padding:clamp(72px,10vw,130px) 0}
+.g-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 0 20px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent;cursor:grab;-webkit-overflow-scrolling:touch;margin-top:44px}
+.g-track:active{cursor:grabbing}
+.g-track::-webkit-scrollbar{height:3px}
+.g-track::-webkit-scrollbar-thumb{background:var(--gold);border-radius:99px}
+.g-item{flex:0 0 auto;scroll-snap-align:start;border-radius:10px;overflow:hidden;position:relative}
+.g-item:nth-child(3n+1){width:clamp(200px,25vw,340px)}
+.g-item:nth-child(3n+2){width:clamp(160px,18vw,240px)}
+.g-item:nth-child(3n){width:clamp(240px,28vw,380px)}
+.g-item img{width:100%;height:340px;object-fit:cover;filter:sepia(10%) grayscale(60%) contrast(1.2);transition:filter .4s,transform .5s;pointer-events:none}
+.g-item:hover img{filter:sepia(5%) grayscale(10%);transform:scale(1.05)}
+.g-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(12,10,6,.9) 100%);opacity:0;transition:opacity .3s;display:flex;align-items:flex-end;padding:16px}
+.g-item:hover .g-overlay{opacity:1}
+.g-label{font-family:var(--fD);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+
+/* LOCATION */
+.location{padding:clamp(72px,10vw,130px) 0;background:var(--s1);position:relative}
+.location::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(200,160,80,.2),transparent)}
+.loc-grid{display:grid;grid-template-columns:1fr;gap:44px}
+@media(min-width:768px){.loc-grid{grid-template-columns:1fr 1fr;align-items:start;gap:56px}}
+.loc-map{border-radius:12px;overflow:hidden;border:1px solid var(--border)}
+.loc-map iframe{display:block;width:100%;height:320px;border:none;filter:sepia(20%) grayscale(90%) contrast(1.1) brightness(.75) invert(10%)}
+@media(min-width:768px){.loc-map iframe{height:380px}}
+.info-row{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--border)}
+.info-row:last-child{border-bottom:none}
+.info-ico{width:40px;height:40px;flex-shrink:0;background:var(--gold-dim);border:1px solid var(--gold-b);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:16px;margin-top:2px}
+.info-lbl{font-family:var(--fD);font-size:9px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.info-val{font-size:15px;color:var(--ink-d);line-height:1.6}
+.info-val a:hover{color:var(--gold)}
+
+/* CTA */
+.cta-sec{padding:clamp(80px,12vw,160px) 0;text-align:center;position:relative;overflow:hidden}
+.cta-sec::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 70% at 50% 50%,rgba(200,160,80,.04) 0%,transparent 70%);pointer-events:none}
+.cta-tri{width:56px;height:56px;margin:0 auto 40px;position:relative}
+.cta-tri::before{content:'';position:absolute;inset:0;border-left:28px solid transparent;border-right:28px solid transparent;border-bottom:48px solid rgba(200,160,80,.18)}
+.cta-tri::after{content:'';position:absolute;top:16px;left:8px;border-left:20px solid transparent;border-right:20px solid transparent;border-bottom:34px solid var(--s1)}
+.cta-h2{font-family:var(--fH);font-size:clamp(30px,5.5vw,68px);font-weight:900;text-transform:uppercase;letter-spacing:.02em;line-height:1;margin-bottom:20px}
+.cta-sub{font-size:18px;font-style:italic;color:var(--ink-d);max-width:460px;margin:0 auto 48px;line-height:1.65}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* FOOTER */
+footer{background:var(--bg);border-top:1px solid var(--border);padding:44px 0 28px}
+.ft-in{display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center}
+@media(min-width:640px){.ft-in{flex-direction:row;justify-content:space-between;text-align:left}}
+.ft-brand{font-family:var(--fD);font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.ft-brand small{display:block;font-family:var(--fB);font-size:13px;font-style:italic;font-weight:400;color:var(--ink-dd);letter-spacing:.06em;margin-top:4px}
+.ft-tri{width:0;height:0;border-left:16px solid transparent;border-right:16px solid transparent;border-bottom:28px solid rgba(200,160,80,.14);flex-shrink:0}
+.ft-copy{font-size:12px;color:var(--ink-dd);line-height:1.8}
+
+/* FLOATING */
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:200;display:flex;align-items:center;gap:9px;background:#25D366;color:#000;padding:12px 20px;border-radius:50px;font-family:var(--fD);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;box-shadow:0 6px 24px rgba(37,211,102,.3);transition:transform .2s,box-shadow .2s}
+.wa-float:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(37,211,102,.4)}
+.wa-float svg{width:16px;height:16px;flex-shrink:0}
+.snd-btn{position:fixed;bottom:24px;left:24px;z-index:200;width:46px;height:46px;border-radius:50%;background:var(--s3);border:1px solid var(--gold-b);display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 4px 20px rgba(0,0,0,.4);transition:transform .2s,background .2s}
+.snd-btn:hover{transform:scale(1.1);background:var(--s4)}
+.snd-btn.muted{opacity:.5}
+.snd-btn .on{display:block}.snd-btn .off{display:none}
+.snd-btn.muted .on{display:none}.snd-btn.muted .off{display:block}
 </style>
 </head>
 <body>
 
-<!-- Audio de fondo (silenciado por políticas de navegador; el usuario puede activar) -->
-<audio id="bgm" src="https://cdn.pixabay.com/download/audio/2022/10/20/audio_6f9239210f.mp3?filename=rock-background-124008.mp3" loop muted autoplay></audio>
-<div class="hint">🎵 Música: rock suave (libre de derechos). Si no suena, habilita audio en tu navegador.</div>
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-tri"><svg viewBox="0 0 100 86" fill="none"><path class="tri-path" d="M50 4 L96 82 H4 Z" stroke="#c8a050" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/><line x1="50" y1="4" x2="50" y2="82" stroke="#c8a050" stroke-width="1" opacity=".35"/><line x1="4" y1="82" x2="96" y2="82" stroke="#c8a050" stroke-width="1" opacity=".35"/></svg></div>
+  <p class="loader-text">Illuminati Barber Shop</p>
+  <div class="loader-bar"></div>
+</div>
 
-<div class="ribbon"></div>
-<nav>
-  <div class="container nav-inner">
-    <div class="brand">ILLUMINATI BARBER SHOP</div>
-    <div class="links">
-      <a href="#inicio">Inicio</a>
-      <a href="#cortes">Cortes</a>
-      <a href="#galerias">Galerías</a>
-      <a href="#ubicacion">Ubicación</a>
-      <a href="https://wa.me/573142261626" target="_blank" rel="noopener">WhatsApp</a>
-    </div>
+<!-- NAV -->
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a href="#inicio" class="nav-brand"><span class="brand-tri"></span>Illuminati Barber</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#ubicacion">Ubicación</a></li>
+      <li><a href="https://wa.me/573142261626" target="_blank" rel="noopener" class="nav-wa">WhatsApp</a></li>
+    </ul>
+    <button class="nav-tog" id="navTog" aria-label="Menú"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<header id="inicio" class="hero">
-  <div class="shade"></div>
-  <div class="container wrap">
-    <h1>Un día a la vez</h1>
-    <p class="sub">Barbería en Chitagá · Blanco & Negro · Estilo underground</p>
-    <div class="btns">
-      <a class="btn solid" href="#cortes">Ver cortes</a>
-      <a class="btn" href="https://wa.me/573142261626" target="_blank" rel="noopener">WhatsApp</a>
+<!-- HERO -->
+<section id="inicio" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="wrap hero-content">
+    <p class="hero-eyebrow r">Est. Chitagá · Norte de Santander</p>
+    <h1 class="hero-h1 r d1">Illuminati<br>Barber<span class="line2">Shop</span><span class="slug">"Un día a la vez"</span></h1>
+    <div class="hero-divider r d2"></div>
+    <p class="hero-sub r d2">Arte en cada corte. Actitud en cada hoja.<br>Desde Chitagá para el mundo.</p>
+    <div class="hero-btns r d3">
+      <a href="#servicios" class="btn btn-gold">Ver Servicios</a>
+      <a href="https://wa.me/573142261626" target="_blank" rel="noopener" class="btn btn-outline">Reservar Cita</a>
     </div>
   </div>
-</header>
+  <div class="hero-scroll"><div class="scroll-line"></div>Scroll</div>
+</section>
 
-<section id="cortes">
-  <div class="container">
-    <h2>Cortes</h2>
-    <p class="lead">Rápidos, prolijos y con actitud.</p>
+<!-- MARQUEE -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-inner">
+    <span>Corte Clásico</span><span class="dot">◆</span><span>Fade &amp; Taper</span><span class="dot">◆</span><span>Premium con Barba</span><span class="dot">◆</span><span>Diseño de Cejas</span><span class="dot">◆</span><span>Cera Profesional</span><span class="dot">◆</span><span>Pigmentación</span><span class="dot">◆</span><span>Chitagá</span><span class="dot">◆</span><span>Un día a la vez</span><span class="dot">◆</span>
+    <span>Corte Clásico</span><span class="dot">◆</span><span>Fade &amp; Taper</span><span class="dot">◆</span><span>Premium con Barba</span><span class="dot">◆</span><span>Diseño de Cejas</span><span class="dot">◆</span><span>Cera Profesional</span><span class="dot">◆</span><span>Pigmentación</span><span class="dot">◆</span><span>Chitagá</span><span class="dot">◆</span><span>Un día a la vez</span><span class="dot">◆</span>
+  </div>
+</div>
 
-    <!-- Clásico -->
-    <div class="row">
-      <div class="panel"><img loading="lazy" alt="Corte clásico" src="https://images.unsplash.com/photo-1622286342621-4bd786c2447a?q=80&w=2000&auto=format&fit=crop"></div>
-      <div class="panel pad">
-        <h3 style="margin:0 0 6px;font-family:ui-serif,Georgia,'Times New Roman',serif;letter-spacing:.05em">Corte Clásico</h3>
-        <p class="note">Incluye cortes sencillamente clásicos y rápidos.</p>
-        <p class="price">$10.000 COP</p>
-        <p><a class="btn" href="https://wa.me/573142261626?text=Reserva%20Corte%20Cl%C3%A1sico" target="_blank" rel="noopener">Reservar por WhatsApp</a></p>
+<!-- ABOUT -->
+<section id="nosotros" class="about">
+  <div class="wrap about-grid">
+    <div>
+      <p class="label r">Nuestra historia</p>
+      <h2 class="sec-title r d1">Más que<br>un corte.</h2>
+      <p class="about-body r d2">En Illuminati Barber Shop cada visita es una experiencia. Trabajamos con precisión, pasión y el mismo espíritu underground que nos define. Estilo clásico, actitud de rock. Bienvenido a Chitagá.</p>
+      <div class="about-stats r d3">
+        <div class="stat"><div class="stat-n">3+</div><div class="stat-l">Estilos de corte</div></div>
+        <div class="stat"><div class="stat-n">3</div><div class="stat-l">Servicios de cejas</div></div>
+        <div class="stat"><div class="stat-n">100%</div><div class="stat-l">Calidad garantizada</div></div>
+        <div class="stat"><div class="stat-n">∞</div><div class="stat-l">Actitud rock</div></div>
       </div>
     </div>
+    <div class="about-img-wrap r">
+      <img loading="lazy" alt="Barbería Illuminati" src="https://images.unsplash.com/photo-1599351430140-8ce95e3d7f8a?q=80&w=1200&fm=webp&auto=format&fit=crop">
+    </div>
+  </div>
+</section>
 
-    <!-- Fade sombreado -->
-    <div class="row rev">
-      <div class="panel pad">
-        <h3 style="margin:0 0 6px;font-family:ui-serif,Georgia,'Times New Roman',serif;letter-spacing:.05em">Fade Sombreado</h3>
-        <p class="note">Incluye depilación de cejas si el cliente lo desea, con hojilla.</p>
-        <p class="price">$15.000 COP</p>
-        <p><a class="btn" href="https://wa.me/573142261626?text=Reserva%20Fade%20Sombreado" target="_blank" rel="noopener">Reservar por WhatsApp</a></p>
+<!-- SERVICES -->
+<section id="servicios" class="services">
+  <div class="wrap">
+    <div class="sec-hd">
+      <span class="label r">Nuestros servicios</span>
+      <h2 class="sec-title r d1">Servicios</h2>
+      <div class="gold-rule r d2"></div>
+    </div>
+    <div class="cuts-grid">
+      <div class="s-card r">
+        <img class="s-card-img" loading="lazy" alt="Corte Clásico" src="https://images.unsplash.com/photo-1622286342621-4bd786c2447a?q=80&w=900&fm=webp&auto=format&fit=crop">
+        <div class="s-card-body">
+          <p class="s-num">— 01</p><h3 class="s-name">Corte Clásico</h3>
+          <p class="s-desc">Limpio, rápido y sin concesiones. El estilo atemporal ejecutado con precisión de hojilla.</p>
+          <p class="s-price">$12.000 <small>COP</small></p>
+          <a class="s-btn" href="https://wa.me/573142261626?text=Hola%2C%20quiero%20reservar%20un%20Corte%20Cl%C3%A1sico" target="_blank" rel="noopener">Reservar</a>
+        </div>
       </div>
-      <div class="panel"><img loading="lazy" alt="Fade sombreado" src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=2000&auto=format&fit=crop"></div>
+      <div class="s-card r d1">
+        <img class="s-card-img" loading="lazy" alt="Fade Sombreado" src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=900&fm=webp&auto=format&fit=crop">
+        <div class="s-card-body">
+          <p class="s-num">— 02</p><h3 class="s-name">Fade Sombreado</h3>
+          <p class="s-desc">Degradado impecable con acabado de hojilla. Incluye depilación de cejas opcional.</p>
+          <p class="s-price">$17.000 <small>COP</small></p>
+          <a class="s-btn" href="https://wa.me/573142261626?text=Hola%2C%20quiero%20reservar%20un%20Fade%20Sombreado" target="_blank" rel="noopener">Reservar</a>
+        </div>
+      </div>
+      <div class="s-card r d2">
+        <img class="s-card-img" loading="lazy" alt="Premium con Barba" src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?q=80&w=900&fm=webp&auto=format&fit=crop">
+        <div class="s-card-body">
+          <p class="s-num">— 03</p><h3 class="s-name">Premium + Barba</h3>
+          <p class="s-desc">Corte completo + perfilado de barba + diseño de cejas. La experiencia definitiva.</p>
+          <p class="s-price">$22.000 – $25.000 <small>COP</small></p>
+          <a class="s-btn" href="https://wa.me/573142261626?text=Hola%2C%20quiero%20reservar%20el%20servicio%20Premium%20con%20Barba" target="_blank" rel="noopener">Reservar</a>
+        </div>
+      </div>
     </div>
+    <div class="hr-gold r"><h3>Servicios de Cejas</h3></div>
+    <div class="new-badge r d1">✦ Nuevo servicio profesional</div>
+    <div class="brow-grid">
+      <div class="b-card r"><div class="b-icon">🌿</div><h3 class="b-name">Depilación con Cera</h3><p class="b-desc">Retiro de vello con cera profesional. Resultado limpio, preciso y de mayor duración.</p><p class="b-price">Consultar precio</p></div>
+      <div class="b-card r d1"><div class="b-icon">◈</div><h3 class="b-name">Pigmentación</h3><p class="b-desc">Relleno y definición con pigmento semipermanente. Cejas densas, efecto natural.</p><p class="b-price">Consultar precio</p></div>
+      <div class="b-card r d2"><div class="b-icon">✦</div><h3 class="b-name">Diseño de Cejas</h3><p class="b-desc">Diseño personalizado según tu estructura facial. Geometría perfecta, marco ideal.</p><p class="b-price">Consultar precio</p></div>
+    </div>
+  </div>
+</section>
 
-    <!-- Premium con barba -->
-    <div class="row">
-      <div class="panel"><img loading="lazy" alt="Premium con barba" src="https://images.unsplash.com/photo-1599351430140-8ce95e3d7f8a?q=80&w=2000&auto=format&fit=crop"></div>
-      <div class="panel pad">
-        <h3 style="margin:0 0 6px;font-family:ui-serif,Georgia,'Times New Roman',serif;letter-spacing:.05em">Premium con barba</h3>
-        <p class="note">Incluye corte, perfilado de barba y diseño de cejas con hojilla (no servicio profesional).</p>
-        <p class="price">$20.000 – $23.000 COP</p>
-        <p><a class="btn" href="https://wa.me/573142261626?text=Reserva%20Premium%20con%20barba" target="_blank" rel="noopener">Reservar por WhatsApp</a></p>
+<!-- GALLERY -->
+<section id="galeria" class="gallery">
+  <div class="wrap">
+    <div class="sec-hd">
+      <span class="label r">El Arte</span>
+      <h2 class="sec-title r d1">Galería</h2>
+      <p class="r d2" style="font-style:italic;color:var(--ink-d);font-size:15px;margin-top:10px">Arrastra para explorar — cada imagen, una historia.</p>
+      <div class="gold-rule r d3"></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="g-track" id="gTrack">
+      <div class="g-item"><img loading="lazy" alt="Clásico" src="https://images.unsplash.com/photo-1519741497674-611481863552?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay"><span class="g-label">Clásico</span></div></div>
+      <div class="g-item"><img loading="lazy" alt="Fade" src="https://images.unsplash.com/photo-1593702171957-88c9fc049eb7?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay"><span class="g-label">Fade</span></div></div>
+      <div class="g-item"><img loading="lazy" alt="Premium" src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay"><span class="g-label">Premium</span></div></div>
+      <div class="g-item"><img loading="lazy" alt="Taper" src="https://images.unsplash.com/photo-1503951458645-643d53bfd90f?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay"><span class="g-label">Taper</span></div></div>
+      <div class="g-item"><img loading="lazy" alt="Detalle" src="https://images.unsplash.com/photo-1617137968427-85924c800a22?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay"><span class="g-label">Modern</span></div></div>
+      <div class="g-item"><img loading="lazy" alt="Barba" src="https://images.unsplash.com/photo-1622286343049-57ff1a41f4fd?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay"><span class="g-label">Barba</span></div></div>
+      <div class="g-item"><img loading="lazy" alt="Estilo" src="https://images.unsplash.com/photo-1490135900376-4a6dc4954b09?q=75&w=800&fm=webp&auto=format&fit=crop"><div class="g-overlay"><span class="g-label">Estilo</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="ubicacion" class="location">
+  <div class="wrap">
+    <div class="sec-hd">
+      <span class="label r">Encuéntranos</span>
+      <h2 class="sec-title r d1">Ubicación</h2>
+      <div class="gold-rule r d2"></div>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-map r"><iframe title="Mapa Chitagá" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Chitagá%2C%20Norte%20de%20Santander%2C%20Colombia&hl=es&z=15&output=embed" width="100%" height="380"></iframe></div>
+      <div class="r d1">
+        <div class="info-row"><div class="info-ico">📍</div><div><p class="info-lbl">Dirección</p><p class="info-val">Calle 3 #7-12 · Chitagá<br>Norte de Santander, Colombia</p></div></div>
+        <div class="info-row"><div class="info-ico">📱</div><div><p class="info-lbl">WhatsApp · Teléfono</p><p class="info-val"><a href="https://wa.me/573142261626" target="_blank" rel="noopener">314 226 1626</a></p></div></div>
+        <div class="info-row"><div class="info-ico">⏰</div><div><p class="info-lbl">Horario</p><p class="info-val">Lunes – Sábado · 9:00 am – 7:00 pm</p></div></div>
+        <div class="info-row"><div class="info-ico">👤</div><div><p class="info-lbl">Propietario</p><p class="info-val">Darianny Basto</p></div></div>
+        <div style="margin-top:28px"><a href="https://wa.me/573142261626?text=Hola%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" class="btn btn-gold">Agendar por WhatsApp</a></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="galerias">
-  <div class="container">
-    <h2>Galerías</h2>
-    <p class="lead">Desliza para ver estilos — todas las fotos en blanco y negro.</p>
-
-    <h3 style="font-family:ui-serif,Georgia,'Times New Roman',serif;letter-spacing:.05em">Clásicos</h3>
-    <div class="slider">
-      <img loading="lazy" alt="Clásico 1" src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1600&auto=format&fit=crop">
-      <img loading="lazy" alt="Clásico 2" src="https://images.unsplash.com/photo-1503951458645-643d53bfd90f?q=80&w=1600&auto=format&fit=crop">
-      <img loading="lazy" alt="Clásico 3" src="https://images.unsplash.com/photo-1490135900376-4a6dc4954b09?q=80&w=1600&auto=format&fit=crop">
-    </div>
-
-    <h3 style="margin-top:22px;font-family:ui-serif,Georgia,'Times New Roman',serif;letter-spacing:.05em">Fades (taper, mullet, mod cut)</h3>
-    <div class="slider">
-      <img loading="lazy" alt="Fade 1" src="https://images.unsplash.com/photo-1593702171957-88c9fc049eb7?q=80&w=1600&auto=format&fit=crop">
-      <img loading="lazy" alt="Fade 2" src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1600&auto=format&fit=crop">
-      <img loading="lazy" alt="Fade 3" src="https://images.unsplash.com/photo-1619785292559-9b71c8b99c36?q=80&w=1600&auto=format&fit=crop">
-      <img loading="lazy" alt="Mullet / mod" src="https://images.unsplash.com/photo-1617137968427-85924c800a22?q=80&w=1600&auto=format&fit=crop">
-    </div>
-
-    <h3 style="margin-top:22px;font-family:ui-serif,Georgia,'Times New Roman',serif;letter-spacing:.05em">Premium + Barba</h3>
-    <div class="slider">
-      <img loading="lazy" alt="Barba 1" src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1600&auto=format&fit=crop">
-      <img loading="lazy" alt="Barba 2" src="https://images.unsplash.com/photo-1622286343049-57ff1a41f4fd?q=80&w=1600&auto=format&fit=crop">
-      <img loading="lazy" alt="Barba 3" src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1600&auto=format&fit=crop">
+<!-- CTA -->
+<section class="cta-sec">
+  <div class="wrap">
+    <div class="cta-tri r"></div>
+    <h2 class="cta-h2 r d1">¿Listo para tu<br>próximo corte?</h2>
+    <p class="cta-sub r d2">Escríbenos y agendamos tu cita. Sin filas, sin esperas.</p>
+    <div class="cta-btns r d3">
+      <a href="https://wa.me/573142261626?text=Hola%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" class="btn btn-gold">Agendar por WhatsApp</a>
+      <a href="tel:+573142261626" class="btn btn-outline">Llamar ahora</a>
     </div>
   </div>
 </section>
 
-<section id="ubicacion">
-  <div class="container">
-    <h2>Ubicación</h2>
-    <p class="lead">Calle 3 #7-12, Chitagá, Norte de Santander, Colombia.</p>
-    <div class="panel" style="overflow:hidden;border-radius:16px">
-      <iframe title="Mapa Chitagá" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=Chitag%C3%A1%2C%20Norte%20de%20Santander%2C%20Colombia&hl=es&z=15&output=embed"
-        width="100%" height="360" style="border:0;filter:grayscale(100%) contrast(110%) brightness(90%);"></iframe>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container contact">
-    <h2>WhatsApp / Contacto</h2>
-    <p><strong>Teléfono/WhatsApp:</strong> <a href="https://wa.me/573142261626" target="_blank" rel="noopener">314 226 1626</a></p>
-    <p><strong>Dirección:</strong> Calle 3 #7-12, Chitagá, Norte de Santander</p>
-    <p class="owner"><strong>Propietario:</strong> Darianny Basto</p>
-    <div class="cta">
-      <a class="btn solid" href="https://wa.me/573142261626" target="_blank" rel="noopener">Escríbenos</a>
-      <a class="btn" href="tel:+573142261626">Llamar</a>
-    </div>
-  </div>
-</section>
-
+<!-- FOOTER -->
 <footer>
-  <div class="ribbon"></div>
-  <div class="container" style="padding:16px 0">
-    <div>ILLUMINATI BARBER SHOP — “Un día a la vez”</div>
-    <div style="opacity:.7">© Demo para presentación</div>
+  <div class="wrap ft-in">
+    <div class="ft-brand">Illuminati Barber Shop<small>"Un día a la vez"</small></div>
+    <div class="ft-tri"></div>
+    <div class="ft-copy">Chitagá · Norte de Santander<br>© 2025 Illuminati Barber Shop</div>
   </div>
 </footer>
 
-<!-- Botón flotante WhatsApp -->
-<a class="wa" href="https://wa.me/573142261626" target="_blank" rel="noopener">WhatsApp</a>
+<!-- FLOATING BUTTONS -->
+<a class="wa-float" href="https://wa.me/573142261626" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  WhatsApp
+</a>
+<button class="snd-btn" id="sndBtn" aria-label="Toggle sonido" title="Activar / silenciar sonido">
+  <span class="on">🎵</span><span class="off">🔇</span>
+</button>
 
+<script>
+(function(){
+'use strict';
+let ctx=null,droneNodes=null,soundOn=false;
+function initCtx(){if(ctx)return;ctx=new(window.AudioContext||window.webkitAudioContext)();}
+function startDrone(){
+  if(!ctx||droneNodes)return;
+  const master=ctx.createGain();
+  master.gain.setValueAtTime(0,ctx.currentTime);
+  master.gain.linearRampToValueAtTime(0.055,ctx.currentTime+4);
+  master.connect(ctx.destination);
+  const bass=ctx.createOscillator(),bassGain=ctx.createGain();
+  bass.type='sawtooth';bass.frequency.value=55;bassGain.gain.value=0.35;
+  const lfo=ctx.createOscillator(),lfoG=ctx.createGain();
+  lfo.frequency.value=0.25;lfoG.gain.value=1.2;
+  lfo.connect(lfoG);lfoG.connect(bass.frequency);
+  const lpf=ctx.createBiquadFilter();
+  lpf.type='lowpass';lpf.frequency.value=380;lpf.Q.value=0.7;
+  bass.connect(bassGain);bassGain.connect(lpf);lpf.connect(master);
+  const h2=ctx.createOscillator(),h2g=ctx.createGain();
+  h2.type='sine';h2.frequency.value=110;h2g.gain.value=0.1;
+  h2.connect(h2g);h2g.connect(master);
+  const sr=ctx.sampleRate,len=sr*3,buf=ctx.createBuffer(1,len,sr),d=buf.getChannelData(0);
+  for(let i=0;i<len;i++)d[i]=(Math.random()*2-1);
+  const ns=ctx.createBufferSource();ns.buffer=buf;ns.loop=true;
+  const nbp=ctx.createBiquadFilter();nbp.type='bandpass';nbp.frequency.value=180;nbp.Q.value=0.4;
+  const ng=ctx.createGain();ng.gain.value=0.007;
+  ns.connect(nbp);nbp.connect(ng);ng.connect(master);
+  bass.start();lfo.start();h2.start();ns.start();
+  droneNodes={master,bass,lfo,h2,ns};
+}
+function stopDrone(){
+  if(!droneNodes)return;
+  droneNodes.master.gain.linearRampToValueAtTime(0,ctx.currentTime+1.5);
+  setTimeout(()=>{try{droneNodes.bass.stop();droneNodes.lfo.stop();droneNodes.h2.stop();droneNodes.ns.stop();}catch(e){}droneNodes=null;},1600);
+}
+function playClick(){
+  if(!ctx||!soundOn)return;
+  const o=ctx.createOscillator(),g=ctx.createGain(),dist=ctx.createWaveShaper();
+  const c=new Float32Array(256);
+  for(let i=0;i<256;i++){const x=(i*2)/256-1;c[i]=(Math.PI+20)*x*20*(Math.PI/180)/(Math.PI+20*Math.abs(x));}
+  dist.curve=c;
+  o.type='square';
+  o.frequency.setValueAtTime(900,ctx.currentTime);
+  o.frequency.exponentialRampToValueAtTime(70,ctx.currentTime+.045);
+  g.gain.setValueAtTime(.25,ctx.currentTime);
+  g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.06);
+  o.connect(dist);dist.connect(g);g.connect(ctx.destination);
+  o.start();o.stop(ctx.currentTime+.07);
+}
+let lastScrollSnd=0;
+function playScrollTick(){
+  if(!ctx||!soundOn)return;
+  const now=performance.now();
+  if(now-lastScrollSnd<120)return;
+  lastScrollSnd=now;
+  const len=Math.floor(ctx.sampleRate*.018),buf=ctx.createBuffer(1,len,ctx.sampleRate),d=buf.getChannelData(0);
+  for(let i=0;i<len;i++)d[i]=(Math.random()*2-1)*(1-i/len);
+  const src=ctx.createBufferSource();src.buffer=buf;
+  const g=ctx.createGain();g.gain.value=.04;
+  const lpf=ctx.createBiquadFilter();lpf.type='lowpass';lpf.frequency.value=3000;
+  src.connect(lpf);lpf.connect(g);g.connect(ctx.destination);src.start();
+}
+const sndBtn=document.getElementById('sndBtn');
+sndBtn.addEventListener('click',()=>{
+  initCtx();
+  if(ctx.state==='suspended')ctx.resume();
+  soundOn=!soundOn;
+  sndBtn.classList.toggle('muted',!soundOn);
+  if(soundOn){startDrone();}else{stopDrone();}
+  playClick();
+});
+document.addEventListener('click',e=>{
+  if(e.target.closest('.snd-btn'))return;
+  if(!soundOn)return;
+  initCtx();if(ctx.state==='suspended')ctx.resume();
+  playClick();
+},{passive:true});
+window.addEventListener('scroll',()=>{if(!soundOn)return;playScrollTick();},{passive:true});
+const navEl=document.getElementById('nav');
+window.addEventListener('scroll',()=>navEl.classList.toggle('scrolled',window.scrollY>60),{passive:true});
+const navTog=document.getElementById('navTog'),navLinks=document.getElementById('navLinks');
+navTog.addEventListener('click',()=>{navTog.classList.toggle('open');navLinks.classList.toggle('open');});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navTog.classList.remove('open');navLinks.classList.remove('open');}));
+const revObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');revObs.unobserve(e.target);}});},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.r').forEach(el=>revObs.observe(el));
+const gTrack=document.getElementById('gTrack');
+if(gTrack){let down=false,sx,sl;gTrack.addEventListener('mousedown',e=>{down=true;sx=e.pageX-gTrack.offsetLeft;sl=gTrack.scrollLeft;});gTrack.addEventListener('mouseleave',()=>down=false);gTrack.addEventListener('mouseup',()=>down=false);gTrack.addEventListener('mousemove',e=>{if(!down)return;e.preventDefault();gTrack.scrollLeft=sl-(e.pageX-gTrack.offsetLeft-sx)*1.6;});}
+window.addEventListener('load',()=>setTimeout(()=>document.getElementById('loader').classList.add('out'),1500));
+})();
+</script>
 </body>
 </html>
